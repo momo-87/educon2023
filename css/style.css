@@ -3,20 +3,23 @@
   src: url(/fonts/Lato-Heavy.ttf);
   font-weight: bolder;
 }
+
 @font-face {
   font-family: "lato";
   src: url(/fonts/Lato-Bold.ttf);
   font-weight: bold;
 }
+
 @font-face {
   font-family: "lato";
   src: url(/fonts/Lato-Regular.ttf);
   font-weight: normal;
 }
+
 * {
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -44,6 +47,7 @@ a {
     background-size: cover;
     width: 100%;
   }
+
   .navbar .overlay {
     position: fixed;
     top: 0;
@@ -51,14 +55,17 @@ a {
     height: 136px;
     background-color: rgba(248, 248, 248, 0.9);
   }
+
   .navbar .navbar-brand {
     display: none;
   }
+
   .navbar button {
     border: none;
     margin-top: 10px;
     z-index: 2;
   }
+
   .headline {
     background-color: rgba(248, 248, 248, 0.9);
     margin-top: 136px;
@@ -66,98 +73,117 @@ a {
     row-gap: 16px;
     padding-bottom: 100px;
   }
+
   .headline .introductionText h1 {
     color: #ec5242;
   }
+
   .headline .introductionText h1 > span {
     display: block;
     font-size: 50px;
     font-weight: bolder;
   }
+
   .headline .descriptionText {
     border: 5px solid white;
     padding: 30px 5%;
     text-align: justify;
   }
+
   .headline .dateAndPlace h1 {
     font-size: 30px;
     font-weight: bolder;
   }
+
   .mainProgram {
     color: white;
     background-color: #272a31;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding-top: 50px;
     row-gap: 15px;
     padding-bottom: 50px;
   }
+
   .mainProgram h2 {
     margin-bottom: -5px;
   }
+
   .mainProgram .underlineMainTitle {
     border: 1px solid #ec5242;
     width: 50px;
     margin-bottom: 20px;
   }
+
   .mainProgram .mainProgramItem {
     background-color: #3c3f46;
     width: 95%;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-column-gap: 3%;
-       -moz-column-gap: 3%;
-            column-gap: 3%;
+    -moz-column-gap: 3%;
+    column-gap: 3%;
   }
+
   .mainProgram .mainProgramItem img {
     width: 12%;
     margin-left: 3%;
   }
+
   .mainProgram .mainProgramItem h3 {
     color: #ec5242;
     width: 19%;
     font-weight: bold;
     font-size: 1.3rem;
   }
+
   .mainProgram .mainProgramItem p {
     width: 58%;
     text-align: start;
     margin: 5px 2%;
   }
+
   .mainProgram .joinButton {
     height: 75px;
     background-color: #ec5242;
     padding: 23px 20px;
     margin-top: 10px;
   }
+
   .mainProgram .joinButton a {
     color: white;
   }
 }
+
 @media (min-width: 768px) {
   .navbar .navbar-brand {
     margin-left: 5%;
     display: block;
   }
+
   .navbar .campaign {
     border: 3px solid #ec5242;
     height: 42px;
     margin-left: 10%;
     padding: 7px 7px;
   }
+
   .navbar .campaign a {
     color: #ec5242;
   }
+
   .navbar ul {
     gap: 5%;
     margin-left: 15%;
     width: 55%;
   }
+
   .navbar ul li:nth-child(1) a {
     color: #ec5242 !important;
   }
+
   .navbar ul li a:hover {
     color: #ec5242 !important;
     border-bottom: 2px solid #ec5242;
