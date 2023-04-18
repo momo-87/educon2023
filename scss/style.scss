@@ -160,44 +160,44 @@ a {
       }
     }
   }
-}
 
-.featuredSpeakers {
-  align-items: center;
-  padding-top: 30px;
-  gap: 10px;
+  .featuredSpeakers {
+    align-items: center;
+    padding-top: 30px;
+    gap: 10px;
 
-  .underlineTitle {
-    border: 1px solid $secondaryColor;
-    width: 50px;
-    margin-bottom: 20px;
-  }
-
-  .speakerBox {
-    width: 95%;
-    gap: 5%;
-
-    img {
-      width: 80%;
-      height: 80%;
+    .underlineTitle {
+      border: 1px solid $secondaryColor;
+      width: 50px;
+      margin-bottom: 20px;
     }
 
-    .speakerDetailsBox {
-      margin-top: 10px;
-    }
+    .speakerBox {
+      width: 95%;
+      gap: 5%;
 
-    h3 {
-      font-weight: bold;
-    }
+      img {
+        width: 80%;
+        height: 80%;
+      }
 
-    h4 {
-      color: $secondaryColor;
-      font-style: italic;
-      font-size: 1em;
-    }
+      .speakerDetailsBox {
+        margin-top: 10px;
+      }
 
-    p {
-      font-size: 1em;
+      h3 {
+        font-weight: bold;
+      }
+
+      h4 {
+        color: $secondaryColor;
+        font-style: italic;
+        font-size: 1em;
+      }
+
+      p {
+        font-size: 1em;
+      }
     }
   }
 }

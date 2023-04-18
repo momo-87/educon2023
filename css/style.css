@@ -155,48 +155,48 @@ a {
   .mainProgram .joinButton a {
     color: white;
   }
-}
 
-.featuredSpeakers {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-top: 30px;
-  gap: 10px;
-}
+  .featuredSpeakers {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 30px;
+    gap: 10px;
+  }
 
-.featuredSpeakers .underlineTitle {
-  border: 1px solid #ec5242;
-  width: 50px;
-  margin-bottom: 20px;
-}
+  .featuredSpeakers .underlineTitle {
+    border: 1px solid #ec5242;
+    width: 50px;
+    margin-bottom: 20px;
+  }
 
-.featuredSpeakers .speakerBox {
-  width: 95%;
-  gap: 5%;
-}
+  .featuredSpeakers .speakerBox {
+    width: 95%;
+    gap: 5%;
+  }
 
-.featuredSpeakers .speakerBox img {
-  width: 80%;
-  height: 80%;
-}
+  .featuredSpeakers .speakerBox img {
+    width: 80%;
+    height: 80%;
+  }
 
-.featuredSpeakers .speakerBox .speakerDetailsBox {
-  margin-top: 10px;
-}
+  .featuredSpeakers .speakerBox .speakerDetailsBox {
+    margin-top: 10px;
+  }
 
-.featuredSpeakers .speakerBox h3 {
-  font-weight: bold;
-}
+  .featuredSpeakers .speakerBox h3 {
+    font-weight: bold;
+  }
 
-.featuredSpeakers .speakerBox h4 {
-  color: #ec5242;
-  font-style: italic;
-  font-size: 1em;
-}
+  .featuredSpeakers .speakerBox h4 {
+    color: #ec5242;
+    font-style: italic;
+    font-size: 1em;
+  }
 
-.featuredSpeakers .speakerBox p {
-  font-size: 1em;
+  .featuredSpeakers .speakerBox p {
+    font-size: 1em;
+  }
 }
 
 @media (min-width: 768px) {
