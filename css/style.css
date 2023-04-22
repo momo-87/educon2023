@@ -3,27 +3,24 @@
   src: url(/fonts/Lato-Heavy.ttf);
   font-weight: bolder;
 }
-
 @font-face {
   font-family: "lato";
   src: url(/fonts/Lato-Bold.ttf);
   font-weight: bold;
 }
-
 @font-face {
   font-family: "lato";
   src: url(/fonts/Lato-Regular.ttf);
   font-weight: normal;
 }
-
 .flex-column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .flex-row {
@@ -32,14 +29,14 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 * {
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
 }
 
@@ -62,7 +59,6 @@ a {
   .header {
     display: none;
   }
-
   .navbar {
     position: fixed;
     top: 0;
@@ -71,7 +67,6 @@ a {
     background-size: 100% 130px;
     width: 100%;
   }
-
   .navbar .overlay {
     position: fixed;
     top: 0;
@@ -79,97 +74,83 @@ a {
     height: 136px;
     background-color: rgba(248, 248, 248, 0.9);
   }
-
   .navbar .navbarBrand,
-  .navbar .closeNavbar {
+.navbar .closeNavbar {
     display: none;
   }
-
   .navbar .navbarBox .openNavbar,
-  .navbar .navbarBox .closeNavbar {
+.navbar .navbarBox .closeNavbar {
     position: fixed;
     margin-top: 20px;
     margin-left: 20px;
     width: 30px;
     height: 20px;
   }
-
   .navbar .navbarListBox .menuList,
-  .navbar .navbarListBox .campaign {
+.navbar .navbarListBox .campaign {
     display: none;
   }
-
   #navbar.mobileSizeNavBar {
     display: block;
     height: 100%;
     background-image: none;
     background-color: rgb(248, 248, 248);
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   #navbar.mobileSizeNavBar .overlay,
-  #navbar.mobileSizeNavBar .openNavbar {
+#navbar.mobileSizeNavBar .openNavbar {
     display: none;
   }
-
   #navbar.mobileSizeNavBar .closeNavbar {
     width: 20px;
     height: 20px;
   }
-
   #navbar.mobileSizeNavBar .navbarListBox {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
   #navbar.mobileSizeNavBar .navbarListBox .campaign {
     display: block;
     position: static;
     padding: 0 39%;
     margin-top: 20px;
   }
-
   #navbar.mobileSizeNavBar .navbarListBox .campaign a {
     color: #ec5242 !important;
     font-weight: bold;
     width: 100%;
   }
-
   #navbar.mobileSizeNavBar .navbarListBox .menuList {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-top: 50px;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 20px;
   }
-
   #navbar.mobileSizeNavBar .navbarListBox .menuList li a {
     font-weight: bold;
     color: #272a31;
   }
-
   #navbar.mobileSizeNavBar .openNavbar {
     display: none;
   }
-
   #navbar.mobileSizeNavBar .closeMobileMenu {
     display: block;
   }
-
   .headline {
     background-color: rgba(248, 248, 248, 0.9);
     margin-top: 136px;
@@ -177,87 +158,74 @@ a {
     row-gap: 16px;
     padding-bottom: 100px;
   }
-
   .headline .introductionText h1 {
     color: #ec5242;
     font-weight: normal;
   }
-
   .headline .introductionText h1 > span {
     display: block;
     font-size: 40px;
     font-weight: bolder;
     margin-top: 10px;
   }
-
   .headline .descriptionText {
     border: 5px solid white;
     padding: 30px 5%;
     text-align: justify;
   }
-
   .headline .dateAndPlace h1 {
     font-size: 30px;
     font-weight: bolder;
   }
-
   .mainProgram {
     color: white;
     background-color: #272a31;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 50px;
     row-gap: 15px;
     padding-bottom: 50px;
   }
-
   .mainProgram .mainProgramItemsBox {
     gap: 15px;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   .mainProgram .mainProgramItemsBox .mainProgramItem {
     background-color: #3c3f46;
     width: 95%;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-column-gap: 3%;
-    -moz-column-gap: 3%;
-    column-gap: 3%;
+       -moz-column-gap: 3%;
+            column-gap: 3%;
     font-size: 0.8rem;
   }
-
   .mainProgram .mainProgramItemsBox .mainProgramItem .mainProgramImage {
     width: 12%;
     margin-left: 3%;
   }
-
   .mainProgram .mainProgramItemsBox .mainProgramItem h3 {
     color: #f35444;
     width: 19%;
     font-weight: bold;
   }
-
   .mainProgram .mainProgramItemsBox .mainProgramItem p {
     width: 58%;
     text-align: start;
     margin: 5px 2%;
   }
-
   .mainProgram h2 {
     margin-bottom: -5px;
   }
-
   .mainProgram .underlineMainTitle {
     border: 1px solid #ec5242;
     width: 50px;
     margin-bottom: 20px;
   }
-
   .mainProgram .joinButton {
     height: 75px;
     width: 330px;
@@ -265,28 +233,24 @@ a {
     padding: 23px 20px;
     margin-top: 10px;
   }
-
   .mainProgram .joinButton .joinLink {
     color: #1f1f1f;
     font-weight: bold;
     font-size: 1rem;
   }
-
   .featuredSpeakers {
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 30px;
     gap: 10px;
     padding-bottom: 50px;
   }
-
   .featuredSpeakers .underlineTitle {
     border: 1px solid #ec5242;
     width: 50px;
     margin-bottom: 20px;
   }
-
   .featuredSpeakers .featuredSpeakersBox {
     width: 100%;
     display: -ms-grid;
@@ -296,7 +260,6 @@ a {
     row-gap: 20px;
     font-size: 0.9rem;
   }
-
   .featuredSpeakers .featuredSpeakersBox .speakerBox {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -304,111 +267,94 @@ a {
     gap: 5%;
     margin: 0 2.5%;
   }
-
   .featuredSpeakers .featuredSpeakersBox .speakerBox .speakerImage {
     width: 160px;
     height: auto;
   }
-
   .featuredSpeakers .featuredSpeakersBox .speakerBox .speakerDetailsBox {
     margin-top: 10px;
   }
-
   .featuredSpeakers .featuredSpeakersBox .speakerBox .speakerDetailsBox h3 {
     font-weight: bold;
   }
-
   .featuredSpeakers .featuredSpeakersBox .speakerBox .speakerDetailsBox h4 {
     margin-top: 10px;
     color: #cd4739;
     font-style: italic;
     font-size: 1em;
   }
-
   .featuredSpeakers .featuredSpeakersBox .speakerBox .speakerDetailsBox .underline {
     border-bottom: 1px solid gray;
     width: 20px;
   }
-
   .featuredSpeakers .featuredSpeakersBox .speakerBox .speakerDetailsBox p {
     margin-top: 10px;
     font-size: 1em;
     text-align: justify;
   }
-
   .featuredSpeakers .moreSpeakersButton {
     border: 1px solid gray;
     width: 90%;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 50px;
     gap: 5px;
   }
-
   .featuredSpeakers .moreSpeakersButton .moreFeatureSpeakers {
     font-size: 0.8rem;
     color: #272a31;
     font-weight: normal;
   }
-
   .partner {
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: #272a31;
     height: 230px;
   }
-
   .partner h2 {
     color: #8e8e8e;
     font-size: 1.5rem;
     margin-top: 30px;
     font-weight: bold;
   }
-
   .partner .partnerUnderline {
     width: 5%;
     border: 1px solid #ec5242;
   }
-
   .partner ul {
     width: 80%;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-top: 30px;
     gap: 3%;
   }
-
   .partner ul li a img {
     height: 30px;
     width: auto;
   }
-
   .footer {
     justify-items: flex-end;
     padding: 30px 10%;
     gap: 20px;
   }
-
   .footer h2 {
     font-size: 1.2rem;
     font-weight: bold;
     width: 50%;
   }
-
   .footer .footerParagraph {
     font-size: 0.8rem;
     width: 50%;
   }
 }
-
 @media (min-width: 768px) {
   .header {
     display: block;
@@ -418,28 +364,24 @@ a {
     background-color: #272a31;
     padding: 5px 0;
   }
-
   .header ul {
     margin: 0 5.5% 0 64.5%;
     gap: 20px;
     width: 300px;
     padding-left: 0;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   .header ul li a {
     color: white;
     font-size: 0.8rem;
   }
-
   .header ul li a img {
     height: 20px;
     width: auto;
     margin-top: 5px;
   }
-
   .navbar {
     height: 50px !important;
     margin-top: 40px;
@@ -447,77 +389,66 @@ a {
     background: white !important;
     background: none;
   }
-
   .navbar .overlay {
     display: none;
   }
-
   .navbar .navbarBox {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-
   .navbar .navbarBox .navbarBrand {
     margin-left: 13%;
     display: block;
     width: 100px;
     height: 50px;
   }
-
   .navbar .navbarBox .navbarBrand img {
     position: static;
     height: 40px;
     width: auto;
     margin-top: -2px;
   }
-
   .navbar .navbarBox .closeMobileMenu,
-  .navbar .navbarBox .openNavbar {
+.navbar .navbarBox .openNavbar {
     display: none;
   }
-
   .navbar .navbarBox .navbarListBox {
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: end;
+        -ms-flex-pack: end;
+            justify-content: end;
     width: 60%;
     margin-left: 1%;
   }
-
   .navbar .navbarBox .navbarListBox .menuList {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     gap: 25px;
     width: 400px;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 5px;
     margin-left: 35%;
   }
-
   .navbar .navbarBox .navbarListBox .menuList li a {
     font-weight: bold;
     font-size: 1rem;
     color: #272a31;
   }
-
   .navbar .navbarBox .navbarListBox .menuList li:nth-child(1) a {
     color: #cd4739 !important;
     font-weight: bold;
   }
-
   .navbar .navbarBox .navbarListBox .menuList li a:hover {
     color: #ec5242 !important;
     border-bottom: 2px solid #ec5242;
   }
-
   .navbar .navbarBox .navbarListBox .campaign {
     display: block;
     border: 3px solid #cd4739;
@@ -526,80 +457,71 @@ a {
     margin: 0 0 0 5%;
     padding: 4px 7px;
   }
-
   .navbar .navbarBox .navbarListBox .campaign .campaignLink {
     color: #cd4739;
     font-weight: bold;
     font-size: 1rem;
   }
-
   .headline {
     padding: 200px 25% 100px 15%;
     margin-top: 0;
   }
-
   .headline .introductionText h1 {
     color: #ec5242;
   }
-
   .headline .introductionText h1 > span {
     display: block;
     font-size: 50px;
     font-weight: bolder;
   }
-
   .headline .descriptionText {
     border: 5px solid white;
     padding: 30px 5%;
     text-align: justify;
   }
-
   .headline .dateAndPlace h1 {
     font-size: 30px;
     font-weight: bolder;
   }
-
   .headline .dateAndPlace p {
     font-weight: bold;
     font-size: 1.3rem;
   }
-
   .mainProgram .mainProgramItemsBox {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     gap: 0.2%;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
+  .mainProgram .mainProgramItemsBox article {
+    width: 17%;
+  }
   .mainProgram .mainProgramItemsBox .mainProgramItem {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 17%;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
     -webkit-column-gap: 5px;
-    -moz-column-gap: 5px;
-    column-gap: 5px;
+       -moz-column-gap: 5px;
+            column-gap: 5px;
     font-size: 1rem;
     padding-top: 10px;
     height: 250px;
     text-align: center;
   }
-
   .mainProgram .mainProgramItemsBox .mainProgramItem:hover {
     border: 2px solid white;
   }
-
   .mainProgram .mainProgramItemsBox .mainProgramItem .mainProgramImage {
     width: 35%;
     height: auto;
     margin-left: 3%;
   }
-
   .mainProgram .mainProgramItemsBox .mainProgramItem h3 {
     color: #f35444;
     width: 100%;
@@ -607,49 +529,42 @@ a {
     font-size: 1.2rem;
     margin-top: 15px;
   }
-
   .mainProgram .mainProgramItemsBox .mainProgramItem p {
     text-align: center;
     width: 95%;
     padding: 0 2.5%;
   }
-
   .mainProgram h2 {
     margin-bottom: -5px;
   }
-
   .mainProgram .underlineMainTitle {
     border: 1px solid #f35444;
     width: 50px;
     margin-bottom: 20px;
   }
-
   .mainProgram .joinButton {
     height: 75px;
     background-color: #f35444;
     padding: 23px 20px;
     margin-top: 10px;
   }
-
   .mainProgram .joinButton .joinLink {
     color: #232323;
     font-weight: bold;
   }
-
   .featuredSpeakers {
     background-color: rgba(248, 248, 248, 0.9);
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 30px;
     gap: 10px;
   }
-
   .featuredSpeakers .featuredSpeakersBox {
     width: 100%;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 40% 40%;
@@ -657,24 +572,19 @@ a {
     row-gap: 40px;
     margin-top: 40px;
   }
-
   .featuredSpeakers .featuredSpeakersBox .speakerBox {
     width: 95%;
     gap: 5%;
   }
-
   .featuredSpeakers .featuredSpeakersBox .speakerBox .speakerDetailsBox {
     margin-top: 10px;
   }
-
   .featuredSpeakers .featuredSpeakersBox .speakerBox .speakerDetailsBox p {
     font-size: 1em;
   }
-
   .featuredSpeakers .moreSpeakersButton {
     display: none;
   }
-
   .footer h2 {
     font-size: 2rem;
   }

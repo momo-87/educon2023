@@ -530,9 +530,13 @@ a {
       gap: 0.2%;
       justify-content: center;
 
+      article {
+        width: 17%;
+      }
+
       .mainProgramItem {
         flex-direction: column;
-        width: 17%;
+        width: 100%;
         column-gap: 5px;
         font-size: 1rem;
         padding-top: 10px;
