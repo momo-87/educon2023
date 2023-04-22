@@ -178,12 +178,16 @@ a {
     padding-bottom: 100px;
   }
 
-  .headline .introductionText h1 {
+  .headline .introductionText {
     color: #ec5242;
-    font-weight: normal;
   }
 
-  .headline .introductionText h1 > span {
+  .headline .introductionText span {
+    font-weight: normal;
+    font-size: 2rem;
+  }
+
+  .headline .introductionText h1 {
     display: block;
     font-size: 40px;
     font-weight: bolder;
@@ -219,9 +223,13 @@ a {
     align-items: center;
   }
 
+  .mainProgram .mainProgramItemsBox article {
+    width: 95%;
+  }
+
   .mainProgram .mainProgramItemsBox .mainProgramItem {
     background-color: #3c3f46;
-    width: 95%;
+    width: 100%;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -539,10 +547,6 @@ a {
   }
 
   .headline .introductionText h1 {
-    color: #ec5242;
-  }
-
-  .headline .introductionText h1 > span {
     display: block;
     font-size: 50px;
     font-weight: bolder;

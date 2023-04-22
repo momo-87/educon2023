@@ -169,11 +169,15 @@ a {
     row-gap: 16px;
     padding-bottom: 100px;
 
-    .introductionText h1 {
+    .introductionText {
       color: $secondaryColor;
-      font-weight: normal;
 
-      >span {
+      span {
+        font-weight: normal;
+        font-size: 2rem;
+      }
+
+      h1 {
         display: block;
         font-size: 40px;
         font-weight: bolder;
@@ -207,9 +211,13 @@ a {
       gap: 15px;
       align-items: center;
 
+      article {
+        width: 95%;
+      }
+
       .mainProgramItem {
         background-color: #3c3f46;
-        width: 95%;
+        width: 100%;
         align-items: center;
         column-gap: 3%;
         font-size: 0.8rem;
@@ -495,10 +503,8 @@ a {
     padding: 200px 25% 100px 15%;
     margin-top: 0;
 
-    .introductionText h1 {
-      color: $secondaryColor;
-
-      >span {
+    .introductionText {
+      h1 {
         display: block;
         font-size: 50px;
         font-weight: bolder;

@@ -18,31 +18,31 @@ const speakers = [{
   description: 'Benkler studies commons based peer production, and published his seminal book. The Wealth of Networks in 2006',
 },
 {
-  photo: './images/speaker1.png',
+  photo: './images/speaker2.png',
   name: 'Yochai Benkler',
   position: 'Berkman Professor of Entrepreneurial Legal Studies',
   description: 'Benkler studies commons based peer production, and published his seminal book. The Wealth of Networks in 2006',
 },
 {
-  photo: './images/speaker1.png',
+  photo: './images/speaker3.png',
   name: 'Yochai Benkler',
   position: 'Berkman Professor of Entrepreneurial Legal Studies',
   description: 'Benkler studies commons based peer production, and published his seminal book. The Wealth of Networks in 2006',
 },
 {
-  photo: './images/speaker1.png',
+  photo: './images/speaker4.png',
   name: 'Yochai Benkler',
   position: 'Berkman Professor of Entrepreneurial Legal Studies',
   description: 'Benkler studies commons based peer production, and published his seminal book. The Wealth of Networks in 2006',
 },
 {
-  photo: './images/speaker1.png',
+  photo: './images/speaker5.png',
   name: 'Yochai Benkler',
   position: 'Berkman Professor of Entrepreneurial Legal Studies',
   description: 'Benkler studies commons based peer production, and published his seminal book. The Wealth of Networks in 2006',
 },
 {
-  photo: './images/speaker1.png',
+  photo: './images/speaker6.png',
   name: 'Yochai Benkler',
   position: 'Berkman Professor of Entrepreneurial Legal Studies',
   description: 'Benkler studies commons based peer production, and published his seminal book. The Wealth of Networks in 2006',
@@ -60,7 +60,7 @@ const featuredSpeakersBox = document.querySelector('#featuredSpeakersBox');
 
 for (let i = 0; i < speakers.length; i += 1) {
   // create the speakerBox and append it to featuredSpeakersBox div
-  speakerBoxs[i] = document.createElement('div');
+  speakerBoxs[i] = document.createElement('article');
   speakerBoxs[i].classList.add('speakerBox', 'flex-row');
   featuredSpeakersBox.appendChild(speakerBoxs[i]);
 
