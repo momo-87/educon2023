@@ -162,6 +162,7 @@ If you like this project just give it a star ⭐️.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank Microverse.
+I would like to thank <a href = "https://www.behance.net/adagio07">Cindy Shin</a> the author of the <a href = "https://www.behance.net/gallery/29845175/CC-Global-Summit-2015">original design.</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
