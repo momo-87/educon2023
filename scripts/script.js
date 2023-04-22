@@ -1,3 +1,16 @@
+const openMobileMenuButton = document.querySelector('#openNavbar');
+const navbar = document.querySelector('#navbar');
+const closeMobileMenu = document.querySelector('.closeMobileMenu');
+
+openMobileMenuButton.addEventListener('click', () => {
+  navbar.classList.add('mobileSizeNavBar');
+  openMobileMenuButton.classList.add('hide');
+});
+
+closeMobileMenu.addEventListener('click', () => {
+  navbar.classList.remove('mobileSizeNavBar');
+});
+
 const speakers = [{
   photo: './images/speaker1.png',
   name: 'Yochai Benkler',
@@ -42,18 +55,20 @@ const speakerDetailsBox = [];
 const speakerNames = [];
 const speakerPositions = [];
 const speakerDescription = [];
-const featuredSpeakers = document.querySelector('#featuredSpeakers');
+const speakerPositionUnderline = [];
+const featuredSpeakersBox = document.querySelector('#featuredSpeakersBox');
 
 for (let i = 0; i < speakers.length; i += 1) {
-  // create the speakerBox and append it to featuredSpeakers section
+  // create the speakerBox and append it to featuredSpeakersBox div
   speakerBoxs[i] = document.createElement('div');
-  speakerBoxs[i].classList.add('speakerBox', 'd-flex');
-  featuredSpeakers.appendChild(speakerBoxs[i]);
+  speakerBoxs[i].classList.add('speakerBox', 'flex-row');
+  featuredSpeakersBox.appendChild(speakerBoxs[i]);
 
   // Create speaker image and append it to speakerBox
   speakerPhotos[i] = document.createElement('img');
   speakerPhotos[i].src = speakers[i].photo;
   speakerPhotos[i].alt = 'speaker 1';
+  speakerPhotos[i].className = 'speakerImage';
   speakerBoxs[i].appendChild(speakerPhotos[i]);
 
   // Create speakerDetailsBox and append it to speakerBox
@@ -71,8 +86,29 @@ for (let i = 0; i < speakers.length; i += 1) {
   speakerPositions[i].innerHTML = speakers[i].position;
   speakerDetailsBox[i].appendChild(speakerPositions[i]);
 
-  // Create speaker descriotion and append it to speakerDetailsBox
+  // Create speaker position undelineBox and append it to speakerDetailsBox
+  speakerPositionUnderline[i] = document.createElement('div');
+  speakerPositionUnderline[i].classList.add('underline');
+  speakerDetailsBox[i].appendChild(speakerPositionUnderline[i]);
+
+  // Create speaker description and append it to speakerDetailsBox
   speakerDescription[i] = document.createElement('p');
   speakerDescription[i].innerHTML = speakers[i].description;
   speakerDetailsBox[i].appendChild(speakerDescription[i]);
 }
+
+// Display only two speakersBoxs by default on mobile screen
+if (window.innerWidth < 768) {
+  for (let j = 2; j < speakers.length; j += 1) {
+    speakerBoxs[j].style.display = 'none';
+  }
+}
+
+// Add evenListener to MORE button
+const moreSpeakersButton = document.querySelector('.moreSpeakersButton');
+moreSpeakersButton.addEventListener('click', () => {
+  for (let j = 2; j < speakers.length; j += 1) {
+    speakerBoxs[j].style.display = 'flex';
+  }
+  moreSpeakersButton.style.display = 'none';
+});
