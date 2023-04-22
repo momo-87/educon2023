@@ -302,13 +302,13 @@ a {
   }
 
   .pastSeminarsBox .pastSeminars .seminar22 {
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(236, 82, 66, 0.5)), to(rgba(236, 82, 66, 0.5))), url("./images/seminar1.png") no-repeat top center;
-    background: linear-gradient(to top, rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url("./images/seminar1.png") no-repeat top center;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(236, 82, 66, 0.5)), to(rgba(236, 82, 66, 0.5))), url("../images/seminar1.png") no-repeat top center;
+    background: linear-gradient(to top, rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url("../images/seminar1.png") no-repeat top center;
   }
 
   .pastSeminarsBox .pastSeminars .seminar21 {
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(236, 82, 66, 0.5)), to(rgba(236, 82, 66, 0.5))), url("./images/seminar2.png") no-repeat top center;
-    background: linear-gradient(to top, rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url("./images/seminar2.png") no-repeat top center;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(236, 82, 66, 0.5)), to(rgba(236, 82, 66, 0.5))), url("../images/seminar2.png") no-repeat top center;
+    background: linear-gradient(to top, rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url("../images/seminar2.png") no-repeat top center;
   }
 
   .partner {

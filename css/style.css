@@ -67,7 +67,7 @@ a {
     position: fixed;
     top: 0;
     height: 100px;
-    background: no-repeat, url("/images/header-bg2.png") no-repeat;
+    background: no-repeat, url("../images/header-bg.png") no-repeat;
     background-size: 100% 130px;
     width: 100%;
   }
