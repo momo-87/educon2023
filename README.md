@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 <div align="center">
-  <img src="./imges/photo.png" alt="photo" width="80"/>
-  <img src="./imges/intro.png" alt="logo"/>
+  <img src="./images/photo.png" alt="photo" width="80"/>
+  <img src="./images/intro.png" alt="logo"/>
   <br/>
   
   <h2><b>Microverse First Capstone Project</b></h2>
@@ -9,8 +9,9 @@
 <div align="center">
   <img src="./images/card2.jpeg" alt="screenshot"/>
 </div>
-# 📗 Table of Contents
 
+
+# 📗 Table of Contents
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
