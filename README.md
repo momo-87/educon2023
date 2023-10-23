@@ -7,7 +7,7 @@
   <h2><b>Microverse First Capstone Project</b></h2>
 </div>
 <div align="center">
-  <img src="./images/card2.jpeg" alt="screenshot"/>
+  <img src="./images/meeting.png" alt="screenshot"/>
 </div>
 
 
