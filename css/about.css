@@ -58,7 +58,7 @@ a {
   text-decoration: none;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 320px) {
   .header {
     display: none;
   }
