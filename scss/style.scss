@@ -123,11 +123,11 @@ a {
     .navbarListBox {
       display: flex;
       flex-direction: column;
+      align-items: center;
 
       .campaign {
         display: block;
         position: static;
-        padding: 0 39%;
         margin-top: 20px;
 
         a {
@@ -388,7 +388,7 @@ a {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .header {
     display: block;
     position: fixed;
@@ -471,7 +471,7 @@ a {
           }
 
           li a {
-            font-weight: bold;
+            font-weight: bold;  
             font-size: 1rem;
             color: $primaryColor;
           }

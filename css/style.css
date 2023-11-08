@@ -97,11 +97,11 @@ a {
   #navbar.mobileSizeNavBar .navbarListBox {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   #navbar.mobileSizeNavBar .navbarListBox .campaign {
     display: block;
     position: static;
-    padding: 0 39%;
     margin-top: 20px;
   }
   #navbar.mobileSizeNavBar .navbarListBox .campaign a {
@@ -313,7 +313,7 @@ a {
     width: 50%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .header {
     display: block;
     position: fixed;
