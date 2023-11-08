@@ -1,7 +1,7 @@
 {
   "name": "hello-microverse-project",
   "version": "1.0.0",
-  "description": "Repo created for Hello Microverse Project",
+  "description": "Repo created for Microverse first capstone Project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
