@@ -4,7 +4,7 @@
   "description": "Repo created for Microverse first capstone Project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "npx stylelint **/*.{css,scss} --fix npx hint . && npx eslint . --fix"
   },
   "keywords": [],
   "author": "",
