@@ -57,10 +57,6 @@ a {
   text-decoration: none;
 }
 
-.active {
-  color: #cd4739 !important;
-}
-
 @media (min-width: 320px) {
   .header {
     display: none;
@@ -468,15 +464,22 @@ a {
           margin-top: 5px;
           margin-left: 35%;
 
+          .active {
+            color: #cd4739 !important;
+            font-weight: bold;
+            border-bottom: 2px solid $secondaryColor;
+          }
+
           li a {
             font-weight: bold;
             font-size: 1rem;
             color: $primaryColor;
           }
 
-          li:nth-child(1) a {
-            // color: #cd4739 !important;
+          li a:active {
+            color: #cd4739 !important;
             font-weight: bold;
+            border-bottom: 2px solid $secondaryColor;
           }
 
           li a:hover {

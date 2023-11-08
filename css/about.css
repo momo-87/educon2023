@@ -338,13 +338,15 @@ a {
     margin-top: 5px;
     margin-left: 35%;
   }
+  .navbar .navbarBox .navbarListBox .menuList .active {
+    color: #cd4739 !important;
+    font-weight: bold;
+    border-bottom: 2px solid #ec5242;
+  }
   .navbar .navbarBox .navbarListBox .menuList li a {
     font-weight: bold;
     font-size: 1rem;
     color: #272a31;
-  }
-  .navbar .navbarBox .navbarListBox .menuList li:nth-child(1) a {
-    font-weight: bold;
   }
   .navbar .navbarBox .navbarListBox .menuList li a:hover {
     color: #ec5242 !important;
