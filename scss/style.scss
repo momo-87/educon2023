@@ -57,7 +57,7 @@ a {
   text-decoration: none;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 320px) {
   .header {
     display: none;
   }
@@ -471,7 +471,7 @@ a {
           }
 
           li:nth-child(1) a {
-            color: #cd4739 !important;
+            // color: #cd4739 !important;
             font-weight: bold;
           }
 
