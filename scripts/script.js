@@ -112,3 +112,11 @@ moreSpeakersButton.addEventListener('click', () => {
   }
   moreSpeakersButton.style.display = 'none';
 });
+
+// Add evenListener to toggle the active status of a navbar menu item
+const navItems = document.querySelectorAll('navItem');
+navItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('active');
+  });
+});

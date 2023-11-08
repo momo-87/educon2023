@@ -57,6 +57,10 @@ a {
   text-decoration: none;
 }
 
+.active {
+  color: #cd4739 !important;
+}
+
 @media (min-width: 320px) {
   .header {
     display: none;
