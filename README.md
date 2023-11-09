@@ -1,13 +1,17 @@
 <a name="readme-top"></a>
 <div align="center">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ylEbgcaMVc3x3rXFLwMF42Bc69GPF66QWw&usqp=CAU" alt="logo" width="140"  height="auto" />
+  <img src="./images/photo.png" alt="photo" width="80"/>
+  <img src="./images/intro.png" alt="logo"/>
   <br/>
-
-  <h3><b>Microverse First Capstone Project</b></h3>
-
+  
+  <h2><b>Microverse First Capstone Project</b></h2>
 </div>
-# 📗 Table of Contents
+<div align="center">
+  <img src="./images/meeting.png" alt="screenshot"/>
+</div>
 
+
+# 📗 Table of Contents
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
@@ -28,7 +32,7 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 My Porfolio Project <a name="Microverse-First-Capstone-Project"></a>
+# 📖 Meeting Booker <a name="Microverse-First-Capstone-Project"></a>
 
 > This is my Microverse first capstone project. I created using HTML, CSS and JavaScript.
 > Below is the link to the live version:

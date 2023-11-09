@@ -17,28 +17,17 @@
 }
 
 .flex-column {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .flex-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
 }
 
 * {
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
 }
@@ -94,8 +83,6 @@ a {
     height: 100%;
     background-image: none;
     background-color: rgb(248, 248, 248);
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -110,19 +97,14 @@ a {
   }
 
   #navbar.mobileSizeNavBar .navbarListBox {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
+    align-items: center;
   }
 
   #navbar.mobileSizeNavBar .navbarListBox .campaign {
     display: block;
     position: static;
-    padding: 0 39%;
     margin-top: 20px;
   }
 
@@ -133,16 +115,9 @@ a {
   }
 
   #navbar.mobileSizeNavBar .navbarListBox .menuList {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     padding-top: 50px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     gap: 20px;
   }
@@ -162,8 +137,6 @@ a {
 
   .aboutHealine {
     background-color: #f7f7f7;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     margin-top: 80px;
     gap: 30px;
@@ -208,8 +181,6 @@ a {
   }
 
   .abLogoContext {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -243,8 +214,6 @@ a {
     padding-top: 20px;
     padding-bottom: 20px;
     border: 1px solid #dbdbdb;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -253,8 +222,6 @@ a {
   }
 
   .pastSeminarsBox {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     padding: 50px 5%;
     border-top: 1px solid #dbdbdb;
@@ -279,9 +246,6 @@ a {
   .pastSeminarsBox .pastSeminars {
     width: 90%;
     margin-top: 20px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     gap: 20px;
   }
@@ -303,18 +267,14 @@ a {
   }
 
   .pastSeminarsBox .pastSeminars .seminar22 {
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(236, 82, 66, 0.5)), to(rgba(236, 82, 66, 0.5))), url("../images/seminar1.png") no-repeat top center;
     background: linear-gradient(to top, rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url("../images/seminar1.png") no-repeat top center;
   }
 
   .pastSeminarsBox .pastSeminars .seminar21 {
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(236, 82, 66, 0.5)), to(rgba(236, 82, 66, 0.5))), url("../images/seminar2.png") no-repeat top center;
     background: linear-gradient(to top, rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url("../images/seminar2.png") no-repeat top center;
   }
 
   .partner {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     background-color: #272a31;
     height: 230px;
@@ -334,10 +294,7 @@ a {
 
   .partner ul {
     width: 80%;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-top: 30px;
     gap: 3%;
@@ -350,8 +307,6 @@ a {
 
   .footer {
     padding: 30px 5%;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -365,7 +320,7 @@ a {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .header {
     display: block;
     position: fixed;
@@ -380,8 +335,6 @@ a {
     gap: 20px;
     width: 300px;
     padding-left: 0;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -409,8 +362,6 @@ a {
   }
 
   .navbar .navbarBox {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 
@@ -434,39 +385,31 @@ a {
   }
 
   .navbar .navbarBox .navbarListBox {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
     justify-content: end;
     width: 60%;
     margin-left: 1%;
   }
 
   .navbar .navbarBox .navbarListBox .menuList {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
     gap: 25px;
     width: 400px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     margin-top: 5px;
     margin-left: 35%;
+  }
+
+  .navbar .navbarBox .navbarListBox .menuList .active {
+    color: #cd4739 !important;
+    font-weight: bold;
+    border-bottom: 2px solid #ec5242;
   }
 
   .navbar .navbarBox .navbarListBox .menuList li a {
     font-weight: bold;
     font-size: 1rem;
     color: #272a31;
-  }
-
-  .navbar .navbarBox .navbarListBox .menuList li:nth-child(1) a {
-    color: #cd4739 !important;
-    font-weight: bold;
   }
 
   .navbar .navbarBox .navbarListBox .menuList li a:hover {
@@ -523,8 +466,6 @@ a {
     padding-top: 20px;
     padding-bottom: 20px;
     border: 1px solid #dbdbdb;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -533,9 +474,6 @@ a {
   }
 
   .pastSeminarsBox .pastSeminars {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
     max-width: 70%;
   }
@@ -548,11 +486,7 @@ a {
     background-color: #272a31;
     margin-top: 80px;
     color: white;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     height: 200px;
     gap: 2%;
