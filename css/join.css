@@ -1,0 +1,532 @@
+@font-face {
+  font-family: "lato";
+  src: url(/fonts/Lato-Heavy.ttf);
+  font-weight: bolder;
+}
+@font-face {
+  font-family: "lato";
+  src: url(/fonts/Lato-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: "lato";
+  src: url(/fonts/Lato-Regular.ttf);
+  font-weight: normal;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "lato", sans-serif;
+  font-size: 1.2rem;
+  color: #272a31;
+  padding: 0 !important;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 320px) {
+  .header {
+    display: none;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    height: 100px;
+    background: no-repeat, url("../images/header-bg.png") no-repeat;
+    background-size: 100% 130px;
+    width: 100%;
+  }
+  .navbar .overlay {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 136px;
+    background-color: rgba(248, 248, 248, 0.9);
+  }
+  .navbar .navbarBrand,
+  .navbar .closeNavbar {
+    display: none;
+  }
+  .navbar .navbarBox .openNavbar,
+  .navbar .navbarBox .closeNavbar {
+    position: fixed;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 30px;
+    height: 20px;
+  }
+  .navbar .navbarListBox .menuList,
+  .navbar .navbarListBox .campaign {
+    display: none;
+  }
+  #navbar.mobileSizeNavBar {
+    display: block;
+    height: 100%;
+    background-image: none;
+    background-color: rgb(248, 248, 248);
+    align-items: center;
+  }
+  #navbar.mobileSizeNavBar .overlay,
+  #navbar.mobileSizeNavBar .openNavbar {
+    display: none;
+  }
+  #navbar.mobileSizeNavBar .closeNavbar {
+    width: 20px;
+    height: 20px;
+  }
+  #navbar.mobileSizeNavBar .navbarListBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #navbar.mobileSizeNavBar .navbarListBox .campaign {
+    display: block;
+    position: static;
+    margin-top: 20px;
+  }
+  #navbar.mobileSizeNavBar .navbarListBox .campaign a {
+    color: #ec5242 !important;
+    font-weight: bold;
+    width: 100%;
+  }
+  #navbar.mobileSizeNavBar .navbarListBox .menuList {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    align-items: center;
+    gap: 20px;
+  }
+  #navbar.mobileSizeNavBar .navbarListBox .menuList li a {
+    font-weight: bold;
+    color: #272a31;
+  }
+  #navbar.mobileSizeNavBar .openNavbar {
+    display: none;
+  }
+  #navbar.mobileSizeNavBar .closeMobileMenu {
+    display: block;
+  }
+  .headline {
+    background-color: rgba(248, 248, 248, 0.9);
+    margin-top: 136px;
+    padding: 0 4%;
+    row-gap: 16px;
+    padding-bottom: 100px;
+  }
+  .headline .introductionText {
+    color: #ec5242;
+  }
+  .headline .introductionText span {
+    font-weight: normal;
+    font-size: 2rem;
+  }
+  .headline .introductionText h1 {
+    display: block;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 10px;
+  }
+  .headline .descriptionText {
+    border: 5px solid white;
+    padding: 30px 5%;
+    text-align: justify;
+  }
+  .headline .dateAndPlace h1 {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .mainProgram {
+    color: white;
+    background-color: #272a31;
+    align-items: center;
+    padding-top: 50px;
+    row-gap: 15px;
+    padding-bottom: 50px;
+  }
+  .mainProgram .mainProgramItemsBox {
+    gap: 15px;
+    align-items: center;
+  }
+  .mainProgram .mainProgramItemsBox article {
+    width: 95%;
+  }
+  .mainProgram .mainProgramItemsBox .mainProgramItem {
+    background-color: #3c3f46;
+    width: 100%;
+    align-items: center;
+    column-gap: 3%;
+    font-size: 0.8rem;
+  }
+  .mainProgram .mainProgramItemsBox .mainProgramItem .mainProgramImage {
+    width: 12%;
+    margin-left: 3%;
+  }
+  .mainProgram .mainProgramItemsBox .mainProgramItem h3 {
+    color: #f35444;
+    width: 19%;
+    font-weight: bold;
+  }
+  .mainProgram .mainProgramItemsBox .mainProgramItem p {
+    width: 58%;
+    text-align: start;
+    margin: 5px 2%;
+  }
+  .mainProgram h2 {
+    margin-bottom: -5px;
+  }
+  .mainProgram .underlineMainTitle {
+    border: 1px solid #ec5242;
+    width: 50px;
+    margin-bottom: 20px;
+  }
+  .mainProgram .joinButton {
+    height: 75px;
+    width: 330px;
+    background-color: #ec5242;
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+  }
+  .mainProgram .joinButton .joinLink {
+    color: #1f1f1f;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .mainProgram .joinButton:hover {
+    background-color: #3c3f46;
+  }
+  .mainProgram .joinButton:hover .joinLink {
+    color: white;
+  }
+  .featuredSpeakers {
+    align-items: center;
+    padding-top: 30px;
+    gap: 10px;
+    padding-bottom: 50px;
+  }
+  .featuredSpeakers .underlineTitle {
+    border: 1px solid #ec5242;
+    width: 50px;
+    margin-bottom: 20px;
+  }
+  .featuredSpeakers .featuredSpeakersBox {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 95%;
+    row-gap: 20px;
+    font-size: 0.9rem;
+  }
+  .featuredSpeakers .featuredSpeakersBox .speakerBox {
+    display: flex;
+    gap: 5%;
+    margin: 0 2.5%;
+  }
+  .featuredSpeakers .featuredSpeakersBox .speakerBox .speakerImage {
+    width: 160px;
+    height: auto;
+  }
+  .featuredSpeakers .featuredSpeakersBox .speakerBox .speakerDetailsBox {
+    margin-top: 10px;
+  }
+  .featuredSpeakers .featuredSpeakersBox .speakerBox .speakerDetailsBox h3 {
+    font-weight: bold;
+  }
+  .featuredSpeakers .featuredSpeakersBox .speakerBox .speakerDetailsBox h4 {
+    margin-top: 10px;
+    color: #cd4739;
+    font-style: italic;
+    font-size: 1em;
+  }
+  .featuredSpeakers .featuredSpeakersBox .speakerBox .speakerDetailsBox .underline {
+    border-bottom: 1px solid gray;
+    width: 20px;
+  }
+  .featuredSpeakers .featuredSpeakersBox .speakerBox .speakerDetailsBox p {
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: justify;
+  }
+  .featuredSpeakers .moreSpeakersButton {
+    border: 1px solid gray;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    gap: 5px;
+  }
+  .featuredSpeakers .moreSpeakersButton .moreFeatureSpeakers {
+    font-size: 0.8rem;
+    color: #272a31;
+    font-weight: normal;
+  }
+  .partner {
+    align-items: center;
+    background-color: #272a31;
+    height: 230px;
+  }
+  .partner h2 {
+    color: #8e8e8e;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    font-weight: bold;
+  }
+  .partner .partnerUnderline {
+    width: 5%;
+    border: 1px solid #ec5242;
+  }
+  .partner ul {
+    width: 80%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 3%;
+  }
+  .partner ul li a img {
+    height: 30px;
+    width: auto;
+  }
+  .footer {
+    justify-items: flex-end;
+    padding: 30px 10%;
+    gap: 20px;
+  }
+  .footer h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 50%;
+  }
+  .footer .footerParagraph {
+    font-size: 0.8rem;
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #272a31;
+    padding: 5px 0;
+  }
+  .header ul {
+    margin: 0 5.5% 0 64.5%;
+    gap: 20px;
+    width: 300px;
+    padding-left: 0;
+    align-items: center;
+  }
+  .header ul li a {
+    color: white;
+    font-size: 0.8rem;
+  }
+  .header ul li a img {
+    height: 20px;
+    width: auto;
+    margin-top: 5px;
+  }
+  .navbar {
+    height: 50px !important;
+    margin-top: 40px;
+    padding: 5px 0 5px 0;
+    background: white !important;
+    background: none;
+  }
+  .navbar .overlay {
+    display: none;
+  }
+  .navbar .navbarBox {
+    display: flex;
+  }
+  .navbar .navbarBox .navbarBrand {
+    margin-left: 13%;
+    display: block;
+    width: 100px;
+    height: 50px;
+  }
+  .navbar .navbarBox .navbarBrand img {
+    position: static;
+    height: 40px;
+    width: auto;
+    margin-top: -2px;
+  }
+  .navbar .navbarBox .closeMobileMenu,
+  .navbar .navbarBox .openNavbar {
+    display: none;
+  }
+  .navbar .navbarBox .navbarListBox {
+    justify-content: end;
+    width: 60%;
+    margin-left: 1%;
+  }
+  .navbar .navbarBox .navbarListBox .menuList {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    width: 400px;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: 35%;
+  }
+  .navbar .navbarBox .navbarListBox .menuList .active {
+    color: #cd4739 !important;
+    font-weight: bold;
+    border-bottom: 2px solid #ec5242;
+  }
+  .navbar .navbarBox .navbarListBox .menuList li a {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #272a31;
+  }
+  .navbar .navbarBox .navbarListBox .menuList li a:active {
+    color: #cd4739 !important;
+    font-weight: bold;
+    border-bottom: 2px solid #ec5242;
+  }
+  .navbar .navbarBox .navbarListBox .menuList li a:hover {
+    color: #ec5242 !important;
+    border-bottom: 2px solid #ec5242;
+  }
+  .navbar .navbarBox .navbarListBox .campaign {
+    display: block;
+    border: 3px solid #cd4739;
+    width: 90px;
+    height: 42px;
+    margin: 0 0 0 5%;
+    padding: 4px 7px;
+  }
+  .navbar .navbarBox .navbarListBox .campaign .campaignLink {
+    color: #cd4739;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .headline {
+    padding: 200px 25% 100px 15%;
+    margin-top: 0;
+  }
+  .headline .introductionText h1 {
+    display: block;
+    font-size: 50px;
+    font-weight: bolder;
+  }
+  .headline .descriptionText {
+    border: 5px solid white;
+    padding: 30px 5%;
+    text-align: justify;
+  }
+  .headline .dateAndPlace h1 {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .headline .dateAndPlace p {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  .mainProgram .mainProgramItemsBox {
+    flex-direction: row;
+    gap: 0.2%;
+    justify-content: center;
+  }
+  .mainProgram .mainProgramItemsBox article {
+    width: 17%;
+  }
+  .mainProgram .mainProgramItemsBox .mainProgramItem {
+    flex-direction: column;
+    width: 100%;
+    column-gap: 5px;
+    font-size: 1rem;
+    padding-top: 10px;
+    height: 250px;
+    text-align: center;
+  }
+  .mainProgram .mainProgramItemsBox .mainProgramItem:hover {
+    border: 2px solid white;
+  }
+  .mainProgram .mainProgramItemsBox .mainProgramItem .mainProgramImage {
+    width: 35%;
+    height: auto;
+    margin-left: 3%;
+  }
+  .mainProgram .mainProgramItemsBox .mainProgramItem h3 {
+    color: #f35444;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 15px;
+  }
+  .mainProgram .mainProgramItemsBox .mainProgramItem p {
+    text-align: center;
+    width: 95%;
+    padding: 0 2.5%;
+  }
+  .mainProgram h2 {
+    margin-bottom: -5px;
+  }
+  .mainProgram .underlineMainTitle {
+    border: 1px solid #f35444;
+    width: 50px;
+    margin-bottom: 20px;
+  }
+  .mainProgram .joinButton {
+    height: 75px;
+    background-color: #f35444;
+    padding: 23px 20px;
+    margin-top: 10px;
+  }
+  .mainProgram .joinButton .joinLink {
+    color: #232323;
+    font-weight: bold;
+  }
+  .featuredSpeakers {
+    background-color: rgba(248, 248, 248, 0.9);
+    align-items: center;
+    padding-top: 30px;
+    gap: 10px;
+  }
+  .featuredSpeakers .featuredSpeakersBox {
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    row-gap: 40px;
+    margin-top: 40px;
+  }
+  .featuredSpeakers .featuredSpeakersBox .speakerBox {
+    width: 95%;
+    gap: 5%;
+  }
+  .featuredSpeakers .featuredSpeakersBox .speakerBox .speakerDetailsBox {
+    margin-top: 10px;
+  }
+  .featuredSpeakers .featuredSpeakersBox .speakerBox .speakerDetailsBox p {
+    font-size: 1em;
+  }
+  .featuredSpeakers .moreSpeakersButton {
+    display: none;
+  }
+  .footer h2 {
+    font-size: 2rem;
+  }
+}
+
+/*# sourceMappingURL=join.css.map */
