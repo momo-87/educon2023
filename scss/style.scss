@@ -255,13 +255,22 @@ a {
       height: 75px;
       width: 330px;
       background-color: $secondaryColor;
-      padding: 23px 20px;
       margin-top: 10px;
+      text-align: center;
+      align-items: center;
 
       .joinLink {
         color: #1f1f1f;
         font-weight: bold;
         font-size: 1rem;
+      }
+    }
+
+    .joinButton:hover {
+      background-color: #3c3f46;
+      
+      .joinLink {
+        color: #ffff;
       }
     }
   }
