@@ -429,6 +429,19 @@ a {
     font-size: 30px;
     font-weight: bolder;
   }
+  .select-ticket .tickets {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    border: 5px solid #ec5242;
+  }
+  .select-ticket .tickets div {
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+  }
+  .select-ticket .tickets .item-3 {
+    grid-column: 3/span 2;
+  }
   .footer h2 {
     font-size: 2rem;
   }

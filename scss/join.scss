@@ -525,6 +525,23 @@ a {
         font-weight: bolder;
       }
 
+      .tickets {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        border: 5px solid $secondaryColor;
+
+        div {
+          text-align: center;
+          border-bottom: 1px solid black;
+          border-right: 1px solid black;
+
+        }
+
+        .item-3 {
+          grid-column: 3 / span 2;
+        }
+      }
+
   }
 
   .footer {
