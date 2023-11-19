@@ -162,7 +162,7 @@ a {
 
   // Mobile Menu End
 
-  .headline {
+  .select-ticket {
     background-color: rgba(248, 248, 248, 0.9);
     margin-top: 136px;
     padding: 0 4%;
@@ -431,7 +431,7 @@ a {
     margin-top: 40px;
     padding: 5px 0 5px 0;
     background: #ffff !important;
-    background: none;
+    box-shadow: 5px 5px 8px #888888;
 
     .overlay {
       display: none;
@@ -515,136 +515,16 @@ a {
     }
   }
 
-  .headline {
+  .select-ticket {
     padding: 200px 25% 100px 15%;
     margin-top: 0;
 
-    .introductionText {
-      h1 {
+      h2 {
         display: block;
-        font-size: 50px;
-        font-weight: bolder;
-      }
-    }
-
-    .descriptionText {
-      border: 5px solid white;
-      padding: 30px 5%;
-      text-align: justify;
-    }
-
-    .dateAndPlace {
-      h1 {
         font-size: 30px;
         font-weight: bolder;
       }
 
-      p {
-        font-weight: bold;
-        font-size: 1.3rem;
-      }
-    }
-  }
-
-  .mainProgram {
-    .mainProgramItemsBox {
-      flex-direction: row;
-      gap: 0.2%;
-      justify-content: center;
-
-      article {
-        width: 17%;
-      }
-
-      .mainProgramItem {
-        flex-direction: column;
-        width: 100%;
-        column-gap: 5px;
-        font-size: 1rem;
-        padding-top: 10px;
-        height: 250px;
-        text-align: center;
-
-        &:hover {
-          border: 2px solid #ffff;
-        }
-
-        .mainProgramImage {
-          width: 35%;
-          height: auto;
-          margin-left: 3%;
-        }
-
-        h3 {
-          color: #f35444;
-          width: 100%;
-          font-weight: bold;
-          font-size: 1.2rem;
-          margin-top: 15px;
-        }
-
-        p {
-          text-align: center;
-          width: 95%;
-          padding: 0 2.5%;
-        }
-      }
-    }
-
-    h2 {
-      margin-bottom: -5px;
-    }
-
-    .underlineMainTitle {
-      border: 1px solid #f35444;
-      width: 50px;
-      margin-bottom: 20px;
-    }
-
-    .joinButton {
-      height: 75px;
-      background-color: #f35444;
-      padding: 23px 20px;
-      margin-top: 10px;
-
-      .joinLink {
-        color: #232323;
-        font-weight: bold;
-      }
-    }
-  }
-
-  .featuredSpeakers {
-    background-color: rgba(248, 248, 248, 0.9);
-    align-items: center;
-    padding-top: 30px;
-    gap: 10px;
-
-    .featuredSpeakersBox {
-      width: 100%;
-      justify-content: center;
-      display: grid;
-      grid-template-columns: 40% 40%;
-      row-gap: 40px;
-      margin-top: 40px;
-
-      .speakerBox {
-        width: 95%;
-        gap: 5%;
-
-        .speakerDetailsBox {
-          margin-top: 10px;
-
-          p {
-            font-size: 1em;
-          }
-        }
-      }
-    }
-
-    .moreSpeakersButton {
-      display: none;
-    }
   }
 
   .footer {

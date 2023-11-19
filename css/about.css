@@ -300,7 +300,7 @@ a {
     margin-top: 40px;
     padding: 5px 0 5px 0;
     background: white !important;
-    background: none;
+    box-shadow: 5px 5px 8px #888888;
   }
   .navbar .overlay {
     display: none;
