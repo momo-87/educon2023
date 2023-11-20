@@ -469,6 +469,13 @@ a {
     border-bottom: 1px solid gainsboro;
     border-right: 1px solid gainsboro;
   }
+  .select-ticket .tickets div input, #select-lunch .tickets div input {
+    margin-bottom: 10px;
+    accent-color: #ec5242;
+  }
+  .select-ticket .tickets div:nth-child(n+5), #select-lunch .tickets div:nth-child(n+5) {
+    background-color: white;
+  }
   .select-ticket .tickets .category, #select-lunch .tickets .category {
     height: 50px;
   }
@@ -483,14 +490,6 @@ a {
     color: #ec5242;
     height: 100%;
     width: 100%;
-  }
-  .select-ticket .tickets .selected-price, #select-lunch .tickets .selected-price {
-    background-color: #ec5242;
-    color: white;
-  }
-  .select-ticket .tickets .price:hover, #select-lunch .tickets .price:hover {
-    background-color: #ec5242;
-    color: white;
   }
   .select-ticket .next-section, #select-lunch .next-section {
     position: absolute;

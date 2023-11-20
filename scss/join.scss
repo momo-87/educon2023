@@ -570,6 +570,15 @@ a {
         border-bottom: 1px solid gainsboro;
         border-right: 1px solid gainsboro;
 
+        input {
+          margin-bottom: 10px;
+          accent-color: $secondaryColor;
+        }
+
+      }
+
+      div:nth-child(n+5) {
+        background-color: #ffff;
       }
 
       .category {
@@ -590,15 +599,15 @@ a {
         width: 100%;
       }
 
-      .selected-price {
-        background-color: $secondaryColor;
-        color: #ffff;
-      }
+      // .selected-price {
+      //   background-color: $secondaryColor;
+      //   color: #ffff;
+      // }
 
-      .price:hover {
-        background-color: $secondaryColor;
-        color: #ffff;
-      }
+      // .price:hover {
+      //   background-color: $secondaryColor;
+      //   color: #ffff;
+      // }
     }
 
     .next-section {
