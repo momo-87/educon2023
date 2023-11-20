@@ -520,75 +520,86 @@ a {
     align-items: center;
     gap: 30px;
 
+    .title {
+      display: flex;
+      align-items: center;
+
       h2 {
         display: block;
         font-size: 1.5rem;
         font-weight: bolder;
       }
 
-      .step1 {
+      hr {
+        border: 1px solid $secondaryColor;
+        width: 50px;
+        margin-top: 5px;
+      }
+    }
+
+    .step1 {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      padding: 0 30px 0 20px;
+      height: 40px;
+      border: 1px solid gainsboro;
+      border-radius: 20px;
+      
+      span:nth-child(1) {
+        color: $secondaryColor;
+
+        i {
+          font-size: 0.7rem;
+        }
+      }
+    }
+
+    .tickets {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      border: 5px solid $secondaryColor;
+
+      div {
         display: flex;
-        gap: 20px;
+        justify-content: center;
         align-items: center;
-        padding: 0 30px 0 20px;
-        height: 40px;
-        border: 1px solid gainsboro;
-        border-radius: 20px;
-        
-        span:nth-child(1) {
-          color: $secondaryColor;
+        min-height: 30px;
+        min-width: 175px;
+        text-align: center;
+        border-bottom: 1px solid gainsboro;
+        border-right: 1px solid gainsboro;
 
-          i {
-            font-size: 0.7rem;
-          }
-        }
       }
 
-      .tickets {
-        display: grid;
-        grid-template-columns: auto auto auto auto auto;
-        border: 5px solid $secondaryColor;
-
-        div {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          min-height: 30px;
-          min-width: 175px;
-          text-align: center;
-          border-bottom: 1px solid gainsboro;
-          border-right: 1px solid gainsboro;
-
-        }
-
-        .category {
-          height: 50px;
-        }
-
-        .item-3 {
-          grid-column: 3 / span 2;
-        }
-
-        .price {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-weight: bold;
-          color: $secondaryColor;
-          height: 100%;
-          width: 100%;
-        }
-
-        .selected-price {
-          background-color: $secondaryColor;
-          color: #ffff;
-        }
-
-        .price:hover {
-          background-color: $secondaryColor;
-          color: #ffff;
-        }
+      .category {
+        height: 50px;
       }
+
+      .item-3 {
+        grid-column: 3 / span 2;
+      }
+
+      .price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        color: $secondaryColor;
+        height: 100%;
+        width: 100%;
+      }
+
+      .selected-price {
+        background-color: $secondaryColor;
+        color: #ffff;
+      }
+
+      .price:hover {
+        background-color: $secondaryColor;
+        color: #ffff;
+      }
+    }
   }
 
   .footer {
