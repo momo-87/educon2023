@@ -492,6 +492,20 @@ a {
     background-color: #ec5242;
     color: white;
   }
+  .select-ticket .next-section a {
+    position: relative;
+  }
+  .select-ticket .next-section a span:nth-child(1) {
+    color: #ec5242;
+    font-size: 3rem;
+  }
+  .select-ticket .next-section a span:nth-child(2) {
+    color: white;
+    font-size: 1rem;
+    margin-left: -30px;
+    position: absolute;
+    margin-top: 20px;
+  }
   .footer h2 {
     font-size: 2rem;
   }

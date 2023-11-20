@@ -600,6 +600,24 @@ a {
         color: #ffff;
       }
     }
+
+    .next-section {
+      a {
+        position: relative;
+
+        span:nth-child(1) {
+          color: $secondaryColor;
+          font-size: 3rem;
+        }
+        span:nth-child(2) {
+          color: #ffff;
+          font-size: 1rem;
+          margin-left: -30px;
+          position: absolute;
+          margin-top: 20px;
+        }
+      }
+    }
   }
 
   .footer {
