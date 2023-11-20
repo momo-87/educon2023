@@ -57,7 +57,7 @@
         <hr>
       </div>
 
-      <div class="step1">
+      <div class="step">
         <span><i class="fa-solid fa-diamond"></i> STEP 1</span>
         <span>Please select the day when you want to join the conference</span>
       </div>
@@ -75,16 +75,40 @@
           <div>13.-14. Apr(Thu-Fri)</div>
 
           <div class="category">Normal</div>
-          <div><a class="price" class="price" href="#">$70</a></div>
-          <div><a class="price" href="#">$70</a></div>
-          <div><a class="price" href="#">$100</a></div>
-          <div><a class="price" href="#">$0</a></div>
+          <div class="flex-column">
+            <span class="price" class="price" href="#">$70</span>
+            <input type="radio" name="price" value="70-13apr">
+          </div>
+          <div class="flex-column">
+            <span class="price" href="#">$70</span>
+            <input type="radio" name="price" value="70-14apr">
+          </div>
+          <div class="flex-column">
+            <span class="price" href="#">$100</span>
+            <input type="radio" name="price" value="100">
+          </div>
+          <div class="flex-column">
+            <span class="price" href="#">$0</span>
+            <input type="radio" name="price" value="0">
+          </div>
 
           <div class="category">Student</div>
-          <div><a class="price" href="#">$30</a></div>
-          <div><a class="price" href="#">$30</a></div>
-          <div><a class="price" href="#">$50</a></div>
-          <div><a class="price" href="#">$0</a></div>
+          <div class="flex-column">
+            <span class="price" href="#">$30</span>
+            <input type="radio" name="price" value="30-13apr">
+          </div>
+          <div class="flex-column">
+            <span class="price" href="#">$30</span>
+            <input type="radio" name="price" value="70-14apr">
+          </div>
+          <div class="flex-column">
+            <span class="price" href="#">$50</span>
+            <input type="radio" name="price" value="50">
+          </div>
+          <div class="flex-column">
+            <span class="price" href="#">$0</span>
+            <input type="radio" name="price" value="0">
+          </div>
       </div>
 
       <div class="next-section">
@@ -95,7 +119,17 @@
       </div>
     </section>
 
-    <section id="select-lunch"></section>
+    <section id="select-lunch" class="flex-column">
+      <div class="title flex-column">
+        <h2>Select Your Lunch</h2>
+        <hr>
+      </div>
+
+      <div class="step">
+        <span><i class="fa-solid fa-diamond"></i> STEP 2</span>
+        <span>Please select your lunch for registered day. There will ne no further costs for the lunch</span>
+      </div>
+    </section>
 
     <section>
       <div class="partner flex-column">

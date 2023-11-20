@@ -419,27 +419,27 @@ a {
     font-weight: bold;
     font-size: 1rem;
   }
-  .select-ticket {
-    padding: 200px 0 100px 0;
+  .select-ticket, #select-lunch {
+    padding: 200px 0 75px 0;
     margin-top: 0;
     align-items: center;
     gap: 30px;
   }
-  .select-ticket .title {
+  .select-ticket .title, #select-lunch .title {
     display: flex;
     align-items: center;
   }
-  .select-ticket .title h2 {
+  .select-ticket .title h2, #select-lunch .title h2 {
     display: block;
     font-size: 1.5rem;
     font-weight: bolder;
   }
-  .select-ticket .title hr {
+  .select-ticket .title hr, #select-lunch .title hr {
     border: 1px solid #ec5242;
     width: 50px;
     margin-top: 5px;
   }
-  .select-ticket .step1 {
+  .select-ticket .step, #select-lunch .step {
     display: flex;
     gap: 20px;
     align-items: center;
@@ -448,18 +448,18 @@ a {
     border: 1px solid gainsboro;
     border-radius: 20px;
   }
-  .select-ticket .step1 span:nth-child(1) {
+  .select-ticket .step span:nth-child(1), #select-lunch .step span:nth-child(1) {
     color: #ec5242;
   }
-  .select-ticket .step1 span:nth-child(1) i {
+  .select-ticket .step span:nth-child(1) i, #select-lunch .step span:nth-child(1) i {
     font-size: 0.7rem;
   }
-  .select-ticket .tickets {
+  .select-ticket .tickets, #select-lunch .tickets {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     border: 5px solid #ec5242;
   }
-  .select-ticket .tickets div {
+  .select-ticket .tickets div, #select-lunch .tickets div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -469,13 +469,13 @@ a {
     border-bottom: 1px solid gainsboro;
     border-right: 1px solid gainsboro;
   }
-  .select-ticket .tickets .category {
+  .select-ticket .tickets .category, #select-lunch .tickets .category {
     height: 50px;
   }
-  .select-ticket .tickets .item-3 {
+  .select-ticket .tickets .item-3, #select-lunch .tickets .item-3 {
     grid-column: 3/span 2;
   }
-  .select-ticket .tickets .price {
+  .select-ticket .tickets .price, #select-lunch .tickets .price {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -484,27 +484,37 @@ a {
     height: 100%;
     width: 100%;
   }
-  .select-ticket .tickets .selected-price {
+  .select-ticket .tickets .selected-price, #select-lunch .tickets .selected-price {
     background-color: #ec5242;
     color: white;
   }
-  .select-ticket .tickets .price:hover {
+  .select-ticket .tickets .price:hover, #select-lunch .tickets .price:hover {
     background-color: #ec5242;
     color: white;
   }
-  .select-ticket .next-section a {
+  .select-ticket .next-section, #select-lunch .next-section {
+    position: absolute;
+    bottom: 118px;
+  }
+  .select-ticket .next-section a, #select-lunch .next-section a {
     position: relative;
   }
-  .select-ticket .next-section a span:nth-child(1) {
+  .select-ticket .next-section a span:nth-child(1), #select-lunch .next-section a span:nth-child(1) {
     color: #ec5242;
     font-size: 3rem;
   }
-  .select-ticket .next-section a span:nth-child(2) {
+  .select-ticket .next-section a span:nth-child(2), #select-lunch .next-section a span:nth-child(2) {
     color: white;
     font-size: 1rem;
     margin-left: -30px;
     position: absolute;
     margin-top: 20px;
+  }
+  #select-lunch {
+    padding-top: 100px;
+    align-items: center;
+    gap: 30px;
+    z-index: 100;
   }
   .footer h2 {
     font-size: 2rem;
