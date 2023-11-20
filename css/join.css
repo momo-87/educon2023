@@ -31,7 +31,6 @@
 
 body {
   font-family: "lato", sans-serif;
-  font-size: 1.2rem;
   color: #272a31;
   padding: 0 !important;
 }
@@ -435,12 +434,32 @@ a {
     border: 5px solid #ec5242;
   }
   .select-ticket .tickets div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30px;
     text-align: center;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
+    border-bottom: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+  }
+  .select-ticket .tickets .category {
+    height: 50px;
   }
   .select-ticket .tickets .item-3 {
     grid-column: 3/span 2;
+  }
+  .select-ticket .tickets .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #ec5242;
+    height: 100%;
+    width: 100%;
+  }
+  .select-ticket .tickets .price:hover {
+    background-color: #ec5242;
+    color: white;
   }
   .footer h2 {
     font-size: 2rem;

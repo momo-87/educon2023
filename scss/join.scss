@@ -44,7 +44,6 @@ $xxl: 1400px;
 
 body {
   font-family: "lato", sans-serif;
-  font-size: 1.2rem;
   color: $primaryColor;
   padding: 0 !important;
 }
@@ -531,17 +530,38 @@ a {
         border: 5px solid $secondaryColor;
 
         div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 30px;
           text-align: center;
-          border-bottom: 1px solid black;
-          border-right: 1px solid black;
+          border-bottom: 1px solid gainsboro;
+          border-right: 1px solid gainsboro;
 
+        }
+
+        .category {
+          height: 50px;
         }
 
         .item-3 {
           grid-column: 3 / span 2;
         }
-      }
 
+        .price {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: bold;
+          color: $secondaryColor;
+          height: 100%;
+          width: 100%;
+        }
+        .price:hover {
+          background-color: $secondaryColor;
+          color: #ffff;
+        }
+      }
   }
 
   .footer {
