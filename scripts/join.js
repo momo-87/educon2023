@@ -19,3 +19,7 @@ navLinks.forEach((link) => {
 //     e.target.classList.toggle('selected-price');
 //   });
 // });
+
+//  Create and render user lunch selction list
+const li = document.createElement('li');
+const ul = document.querySelector('.lunch-selection');

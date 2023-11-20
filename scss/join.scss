@@ -636,7 +636,43 @@ a {
     padding-top: 100px;
     align-items: center;
     gap: 30px;
-    z-index: 100;
+
+    ul {
+      min-width: 885px;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 25px;
+        min-height: 100px;
+        box-shadow: 2px 2px 3px gainsboro;
+
+        div:nth-child(1) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 40px;
+          background-color: rgba(248, 248, 248, 0.9);
+        }
+
+        div:nth-child(2) {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          height: 60px;
+          padding: 0 20px 0 20px;
+          font-size: 0.9rem;
+          font-weight: bold;
+
+          input {
+            accent-color: $secondaryColor;
+          }
+        }
+      }
+    }
   }
 
   .footer {
