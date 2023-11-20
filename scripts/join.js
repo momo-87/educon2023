@@ -11,3 +11,11 @@ navLinks.forEach((link) => {
     }
   });
 });
+
+// Add eventListener to toggle the active status of a selected price
+const prices = document.querySelectorAll('.price');
+prices.forEach((price) => {
+  price.addEventListener('click', (e) => {
+    e.target.classList.toggle('selected-price');
+  });
+});

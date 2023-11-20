@@ -557,6 +557,12 @@ a {
           height: 100%;
           width: 100%;
         }
+
+        .selected-price {
+          background-color: $secondaryColor;
+          color: #ffff;
+        }
+        
         .price:hover {
           background-color: $secondaryColor;
           color: #ffff;

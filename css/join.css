@@ -457,6 +457,10 @@ a {
     height: 100%;
     width: 100%;
   }
+  .select-ticket .tickets .selected-price {
+    background-color: #ec5242;
+    color: white;
+  }
   .select-ticket .tickets .price:hover {
     background-color: #ec5242;
     color: white;
