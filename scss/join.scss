@@ -673,6 +673,22 @@ a {
         }
       }
     }
+
+    .save-button-ticket {
+      background-color: $secondaryColor;
+      border: none;
+      color: #ffff;
+      font-weight: bold;
+      font-size: 1rem;
+      height: 50px;
+      width: 10%;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .save-button-ticket:hover {
+      background-color: #3c3f46;
+    }
   }
 
   .footer {

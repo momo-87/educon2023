@@ -546,6 +546,20 @@ a {
   #select-lunch ul li div:nth-child(2) input {
     accent-color: #ec5242;
   }
+  #select-lunch .save-button-ticket {
+    background-color: #ec5242;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    height: 50px;
+    width: 10%;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  #select-lunch .save-button-ticket:hover {
+    background-color: #3c3f46;
+  }
   .footer h2 {
     font-size: 2rem;
   }
