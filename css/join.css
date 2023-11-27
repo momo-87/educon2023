@@ -34,7 +34,6 @@
 
 body {
   font-family: "lato", sans-serif;
-  font-size: 1.2rem;
   color: #272a31;
   padding: 0 !important;
 }
@@ -145,7 +144,7 @@ a {
     display: block;
   }
 
-  .headline {
+  .select-ticket {
     background-color: rgba(248, 248, 248, 0.9);
     margin-top: 136px;
     padding: 0 4%;
@@ -153,29 +152,29 @@ a {
     padding-bottom: 100px;
   }
 
-  .headline .introductionText {
+  .select-ticket .introductionText {
     color: #ec5242;
   }
 
-  .headline .introductionText span {
+  .select-ticket .introductionText span {
     font-weight: normal;
     font-size: 2rem;
   }
 
-  .headline .introductionText h1 {
+  .select-ticket .introductionText h1 {
     display: block;
     font-size: 40px;
     font-weight: bolder;
     margin-top: 10px;
   }
 
-  .headline .descriptionText {
+  .select-ticket .descriptionText {
     border: 5px solid white;
     padding: 30px 5%;
     text-align: justify;
   }
 
-  .headline .dateAndPlace h1 {
+  .select-ticket .dateAndPlace h1 {
     font-size: 30px;
     font-weight: bolder;
   }
@@ -360,19 +359,19 @@ a {
     width: auto;
   }
 
-  .footer {
+  #footer {
     justify-items: flex-end;
     padding: 30px 10%;
     gap: 20px;
   }
 
-  .footer h2 {
+  #footer .footer-heading {
     font-size: 1.2rem;
     font-weight: bold;
     width: 50%;
   }
 
-  .footer .footerParagraph {
+  #footer .footerParagraph {
     font-size: 0.8rem;
     width: 50%;
   }
@@ -496,133 +495,192 @@ a {
     font-size: 1rem;
   }
 
-  .headline {
-    padding: 200px 25% 100px 15%;
+  #select-ticket,
+  #select-lunch {
+    padding: 200px 0 75px 0;
     margin-top: 0;
-  }
-
-  .headline .introductionText h1 {
-    display: block;
-    font-size: 50px;
-    font-weight: bolder;
-  }
-
-  .headline .descriptionText {
-    border: 5px solid white;
-    padding: 30px 5%;
-    text-align: justify;
-  }
-
-  .headline .dateAndPlace h1 {
-    font-size: 30px;
-    font-weight: bolder;
-  }
-
-  .headline .dateAndPlace p {
-    font-weight: bold;
-    font-size: 1.3rem;
-  }
-
-  .mainProgram .mainProgramItemsBox {
-    flex-direction: row;
-    gap: 0.2%;
-    justify-content: center;
-  }
-
-  .mainProgram .mainProgramItemsBox article {
-    width: 17%;
-  }
-
-  .mainProgram .mainProgramItemsBox .mainProgramItem {
-    flex-direction: column;
-    width: 100%;
-    column-gap: 5px;
-    font-size: 1rem;
-    padding-top: 10px;
-    height: 250px;
-    text-align: center;
-  }
-
-  .mainProgram .mainProgramItemsBox .mainProgramItem:hover {
-    border: 2px solid white;
-  }
-
-  .mainProgram .mainProgramItemsBox .mainProgramItem .mainProgramImage {
-    width: 35%;
-    height: auto;
-    margin-left: 3%;
-  }
-
-  .mainProgram .mainProgramItemsBox .mainProgramItem h3 {
-    color: #f35444;
-    width: 100%;
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-top: 15px;
-  }
-
-  .mainProgram .mainProgramItemsBox .mainProgramItem p {
-    text-align: center;
-    width: 95%;
-    padding: 0 2.5%;
-  }
-
-  .mainProgram h2 {
-    margin-bottom: -5px;
-  }
-
-  .mainProgram .underlineMainTitle {
-    border: 1px solid #f35444;
-    width: 50px;
-    margin-bottom: 20px;
-  }
-
-  .mainProgram .joinButton {
-    height: 75px;
-    background-color: #f35444;
-    padding: 23px 20px;
-    margin-top: 10px;
-  }
-
-  .mainProgram .joinButton .joinLink {
-    color: #232323;
-    font-weight: bold;
-  }
-
-  .featuredSpeakers {
-    background-color: rgba(248, 248, 248, 0.9);
     align-items: center;
-    padding-top: 30px;
-    gap: 10px;
+    gap: 30px;
   }
 
-  .featuredSpeakers .featuredSpeakersBox {
-    width: 100%;
-    justify-content: center;
+  #select-ticket .title,
+  #select-lunch .title {
+    display: flex;
+    align-items: center;
+  }
+
+  #select-ticket .title h2,
+  #select-lunch .title h2 {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  #select-ticket .title hr,
+  #select-lunch .title hr {
+    border: 1px solid #ec5242;
+    width: 50px;
+    margin-top: 5px;
+  }
+
+  #select-ticket .step,
+  #select-lunch .step {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 0 30px 0 20px;
+    height: 40px;
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+  }
+
+  #select-ticket .step span:nth-child(1),
+  #select-lunch .step span:nth-child(1) {
+    color: #ec5242;
+  }
+
+  #select-ticket .step span:nth-child(1) i,
+  #select-lunch .step span:nth-child(1) i {
+    font-size: 0.7rem;
+  }
+
+  #select-ticket .tickets,
+  #select-lunch .tickets {
     display: grid;
-    grid-template-columns: 40% 40%;
-    row-gap: 40px;
-    margin-top: 40px;
+    grid-template-columns: auto auto auto auto auto;
+    border: 5px solid #ec5242;
   }
 
-  .featuredSpeakers .featuredSpeakersBox .speakerBox {
-    width: 95%;
-    gap: 5%;
+  #select-ticket .tickets div,
+  #select-lunch .tickets div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30px;
+    min-width: 175px;
+    text-align: center;
+    border-bottom: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
   }
 
-  .featuredSpeakers .featuredSpeakersBox .speakerBox .speakerDetailsBox {
-    margin-top: 10px;
+  #select-ticket .tickets div input,
+  #select-lunch .tickets div input {
+    margin-bottom: 10px;
+    accent-color: #ec5242;
   }
 
-  .featuredSpeakers .featuredSpeakersBox .speakerBox .speakerDetailsBox p {
-    font-size: 1em;
+  #select-ticket .tickets div:nth-child(n+5),
+  #select-lunch .tickets div:nth-child(n+5) {
+    background-color: white;
   }
 
-  .featuredSpeakers .moreSpeakersButton {
-    display: none;
+  #select-ticket .tickets .category,
+  #select-lunch .tickets .category {
+    height: 50px;
   }
 
-  .footer h2 {
+  #select-ticket .tickets .item-3,
+  #select-lunch .tickets .item-3 {
+    grid-column: 3/span 2;
+  }
+
+  #select-ticket .tickets .price,
+  #select-lunch .tickets .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #ec5242;
+    height: 100%;
+    width: 100%;
+  }
+
+  #select-ticket .next-section,
+  #select-lunch .next-section {
+    position: absolute;
+    bottom: 118px;
+  }
+
+  #select-ticket .next-section a,
+  #select-lunch .next-section a {
+    position: relative;
+  }
+
+  #select-ticket .next-section a span:nth-child(1),
+  #select-lunch .next-section a span:nth-child(1) {
+    color: #ec5242;
+    font-size: 3rem;
+  }
+
+  #select-ticket .next-section a span:nth-child(2),
+  #select-lunch .next-section a span:nth-child(2) {
+    color: white;
+    font-size: 1rem;
+    margin-left: -30px;
+    position: absolute;
+    margin-top: 20px;
+  }
+
+  #select-lunch {
+    padding-top: 100px;
+    align-items: center;
+    gap: 30px;
+  }
+
+  #select-lunch .lunch-selection {
+    min-width: 885px;
+  }
+
+  #select-lunch .lunch-selection li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+    min-height: 100px;
+    box-shadow: 2px 2px 3px gainsboro;
+  }
+
+  #select-lunch .lunch-selection li div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(248, 248, 248, 0.9);
+  }
+
+  #select-lunch .lunch-selection li div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 0 20px 0 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+
+  #select-lunch .lunch-selection li div:nth-child(2) input {
+    accent-color: #ec5242;
+  }
+
+  #select-lunch .save-button-ticket {
+    background-color: #ec5242;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    height: 50px;
+    width: 10%;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  #select-lunch .save-button-ticket:hover {
+    background-color: #3c3f46;
+  }
+
+  #footer .footer-heading {
     font-size: 2rem;
   }
 }

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4a3fcfc5e4.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="./css/join.css">
+
+    <title>Educational Robotic Conference in Africa</title>
+  </head>
+  <body>
+    <div class="header">
+      <ul class="flex-row">
+        <li><a href="#"><img src="./icons/facebook.png" alt="facebook"></a></li>
+        <li><a href="#"><img src="./icons/twitter.png" alt="twitter"></a></li>
+        <li><a href="#">English</a></li>
+        <li><a href="#">My Page</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </div>
+    <nav id="navbar" class="navbar">
+      <div id="overlay" class="overlay"></div>
+        <div class="navbarBox">
+          <a class="navbarBrand" href="index.html"><img src="./images/logo.png" alt="logo"></a>
+          <img src="./icons/hamburger.png" alt="open menu" id="openNavbar" class="openNavbar">
+          <img src="./icons/close.png" alt="close Menu" id="closeNavbar" class="closeMobileMenu closeNavbar" >
+          <div class="navbarListBox flex-row" id="navbarListBox">
+            <ul id="menuList" class="menuList">
+              <li class="navItem">
+                <a class="navLink" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="navItem">
+                <a class="navLink" aria-current="page" href="about.html">About</a>
+              </li>
+              <li class="navItem">
+                <a class="navLink" href="#">Program</a>
+              </li>
+              <li class="navItem">
+                <a class="navLink active" href="#" aria-disabled="true">Join</a>
+              </li>
+              <li class="navItem">
+                <a class="navLink" href="#" aria-disabled="true">Sponsor</a>
+              </li>
+              <li class="navItem">
+                <a class="navLink" href="#" aria-disabled="true">News</a>
+              </li>
+            </ul>
+            <div id="campaign" class="campaign"><a class="campaignLink" href="#"> Campaign</a></div>
+          </div>
+        </div>
+    </nav>
+
+    <section id="select-ticket" class="flex-column">
+      <div class="title flex-column">
+        <h2>Select Ticket</h2>
+        <hr>
+      </div>
+
+      <div class="step">
+        <span><i class="fa-solid fa-diamond"></i> STEP 1</span>
+        <span>Please select the day when you want to join the conference</span>
+      </div>
+
+      <div class="tickets">
+          <div>Ticket</div>
+          <div>1-Day-Ticket</div>
+          <div class="item-3">2-Day-Ticket</div>
+          <div>Affiliate/Partners</div>
+
+          <div>Date</div>
+          <div>13. Apr(Thu)</div>
+          <div>14. Apr(Fri)</div>
+          <div>13.-14. Apr(Thu-Fri)</div>
+          <div>13.-14. Apr(Thu-Fri)</div>
+
+          <div class="category">Normal</div>
+          <div class="flex-column">
+            <span class="price" class="price" href="#">$70</span>
+            <input type="radio" name="price" value="day-1-norm">
+          </div>
+          <div class="flex-column">
+            <span class="price" href="#">$70</span>
+            <input type="radio" name="price" value="day-2-norm">
+          </div>
+          <div class="flex-column">
+            <span class="price" href="#">$100</span>
+            <input type="radio" name="price" value="100">
+          </div>
+          <div class="flex-column">
+            <span class="price" href="#">$0</span>
+            <input type="radio" name="price" value="0">
+          </div>
+
+          <div class="category">Student</div>
+          <div class="flex-column">
+            <span class="price" href="#">$30</span>
+            <input type="radio" name="price" value="day-1-std">
+          </div>
+          <div class="flex-column">
+            <span class="price" href="#">$30</span>
+            <input type="radio" name="price" value="day-2-std">
+          </div>
+          <div class="flex-column">
+            <span class="price" href="#">$50</span>
+            <input type="radio" name="price" value="50">
+          </div>
+          <div class="flex-column">
+            <span class="price" href="#">$0</span>
+            <input type="radio" name="price" value="0">
+          </div>
+      </div>
+
+      <div class="next-section">
+        <a href="#select-lunch">
+          <span><i class="fa-solid fa-diamond"></i></span>
+          <span><i class="fa-solid fa-angle-down"></i></span>
+        </a>
+      </div>
+    </section>
+
+    <section id="select-lunch" class="flex-column">
+      <div class="title flex-column">
+        <h2>Select Your Lunch</h2>
+        <hr>
+      </div>
+
+      <div class="step">
+        <span><i class="fa-solid fa-diamond"></i> STEP 2</span>
+        <span>Please select your lunch for registered day. There will ne no further costs for the lunch</span>
+      </div>
+
+      <ul class="lunch-selection">
+        <!-- This content is dynamically created -->
+      </ul>
+
+      <button class="save-button-ticket">Save</button>
+    </section>
+
+    <section>
+      <div class="partner flex-column">
+        <h2>Partners</h2>
+        <div class="partnerUnderline"></div>
+        <ul class="flex-row">
+          <li><a href="#"><img src="./images/robotLab2.png" alt="robotlab"></a></li>
+          <li><a href="#"><img src="./images/robodk.png" alt="roboDK"></a></li>
+          <li><a href="#"><img src="./images/robotunion.png" alt="robotunion"></a></li>
+          <li><a href="#"><img src="./images/siemens.png" alt="siemens"></a></li>
+          <li><a href="#"><img src="./images/5Grobot.png" alt="5Grobot"></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div id="footer" class="flex-row">
+        <h2 class="footer-heading">Educational Robotics Conference Cameroon</h2>
+        <p class="footerParagraph">2023 Educational Robotics Conference Cameroun.<span> Some Rights reserved.</span></p>
+    </div>
+    </footer>
+
+    <script src="./scripts/join.js"></script>
+  </body>
+</html>

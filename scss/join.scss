@@ -44,7 +44,6 @@ $xxl: 1400px;
 
 body {
   font-family: "lato", sans-serif;
-  font-size: 1.2rem;
   color: $primaryColor;
   padding: 0 !important;
 }
@@ -162,7 +161,7 @@ a {
 
   // Mobile Menu End
 
-  .headline {
+  .select-ticket {
     background-color: rgba(248, 248, 248, 0.9);
     margin-top: 136px;
     padding: 0 4%;
@@ -379,12 +378,12 @@ a {
     }
   }
 
-  .footer {
+  #footer {
     justify-items: flex-end;
     padding: 30px 10%;
     gap: 20px;
 
-    h2 {
+    .footer-heading {
       font-size: 1.2rem;
       font-weight: bold;
       width: 50%;
@@ -515,140 +514,176 @@ a {
     }
   }
 
-  .headline {
-    padding: 200px 25% 100px 15%;
+  #select-ticket,
+  #select-lunch {
+    padding: 200px 0 75px 0;
     margin-top: 0;
-
-    .introductionText {
-      h1 {
-        display: block;
-        font-size: 50px;
-        font-weight: bolder;
-      }
-    }
-
-    .descriptionText {
-      border: 5px solid white;
-      padding: 30px 5%;
-      text-align: justify;
-    }
-
-    .dateAndPlace {
-      h1 {
-        font-size: 30px;
-        font-weight: bolder;
-      }
-
-      p {
-        font-weight: bold;
-        font-size: 1.3rem;
-      }
-    }
-  }
-
-  .mainProgram {
-    .mainProgramItemsBox {
-      flex-direction: row;
-      gap: 0.2%;
-      justify-content: center;
-
-      article {
-        width: 17%;
-      }
-
-      .mainProgramItem {
-        flex-direction: column;
-        width: 100%;
-        column-gap: 5px;
-        font-size: 1rem;
-        padding-top: 10px;
-        height: 250px;
-        text-align: center;
-
-        &:hover {
-          border: 2px solid #ffff;
-        }
-
-        .mainProgramImage {
-          width: 35%;
-          height: auto;
-          margin-left: 3%;
-        }
-
-        h3 {
-          color: #f35444;
-          width: 100%;
-          font-weight: bold;
-          font-size: 1.2rem;
-          margin-top: 15px;
-        }
-
-        p {
-          text-align: center;
-          width: 95%;
-          padding: 0 2.5%;
-        }
-      }
-    }
-
-    h2 {
-      margin-bottom: -5px;
-    }
-
-    .underlineMainTitle {
-      border: 1px solid #f35444;
-      width: 50px;
-      margin-bottom: 20px;
-    }
-
-    .joinButton {
-      height: 75px;
-      background-color: #f35444;
-      padding: 23px 20px;
-      margin-top: 10px;
-
-      .joinLink {
-        color: #232323;
-        font-weight: bold;
-      }
-    }
-  }
-
-  .featuredSpeakers {
-    background-color: rgba(248, 248, 248, 0.9);
     align-items: center;
-    padding-top: 30px;
-    gap: 10px;
+    gap: 30px;
 
-    .featuredSpeakersBox {
-      width: 100%;
-      justify-content: center;
+    .title {
+      display: flex;
+      align-items: center;
+
+      h2 {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bolder;
+      }
+
+      hr {
+        border: 1px solid $secondaryColor;
+        width: 50px;
+        margin-top: 5px;
+      }
+    }
+
+    .step {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      padding: 0 30px 0 20px;
+      height: 40px;
+      border: 1px solid gainsboro;
+      border-radius: 20px;
+
+      span:nth-child(1) {
+        color: $secondaryColor;
+
+        i {
+          font-size: 0.7rem;
+        }
+      }
+    }
+
+    .tickets {
       display: grid;
-      grid-template-columns: 40% 40%;
-      row-gap: 40px;
-      margin-top: 40px;
+      grid-template-columns: auto auto auto auto auto;
+      border: 5px solid $secondaryColor;
 
-      .speakerBox {
-        width: 95%;
-        gap: 5%;
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 30px;
+        min-width: 175px;
+        text-align: center;
+        border-bottom: 1px solid gainsboro;
+        border-right: 1px solid gainsboro;
 
-        .speakerDetailsBox {
-          margin-top: 10px;
+        input {
+          margin-bottom: 10px;
+          accent-color: $secondaryColor;
+        }
+      }
 
-          p {
-            font-size: 1em;
+      div:nth-child(n+5) {
+        background-color: #ffff;
+      }
+
+      .category {
+        height: 50px;
+      }
+
+      .item-3 {
+        grid-column: 3 / span 2;
+      }
+
+      .price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        color: $secondaryColor;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .next-section {
+      position: absolute;
+      bottom: 118px;
+
+      a {
+        position: relative;
+
+        span:nth-child(1) {
+          color: $secondaryColor;
+          font-size: 3rem;
+        }
+
+        span:nth-child(2) {
+          color: #ffff;
+          font-size: 1rem;
+          margin-left: -30px;
+          position: absolute;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  #select-lunch {
+    padding-top: 100px;
+    align-items: center;
+    gap: 30px;
+
+    .lunch-selection {
+      min-width: 885px;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 25px;
+        min-height: 100px;
+        box-shadow: 2px 2px 3px gainsboro;
+
+        div:nth-child(1) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 40px;
+          background-color: rgba(248, 248, 248, 0.9);
+        }
+
+        div:nth-child(2) {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          height: 60px;
+          padding: 0 20px 0 20px;
+          font-size: 0.9rem;
+          font-weight: bold;
+
+          input {
+            accent-color: $secondaryColor;
           }
         }
       }
     }
 
-    .moreSpeakersButton {
-      display: none;
+    .save-button-ticket {
+      background-color: $secondaryColor;
+      border: none;
+      color: #ffff;
+      font-weight: bold;
+      font-size: 1rem;
+      height: 50px;
+      width: 10%;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .save-button-ticket:hover {
+      background-color: #3c3f46;
     }
   }
 
-  .footer {
-    h2 {
+  #footer {
+    .footer-heading {
       font-size: 2rem;
     }
   }
