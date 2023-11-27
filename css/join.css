@@ -3,16 +3,19 @@
   src: url(/fonts/Lato-Heavy.ttf);
   font-weight: bolder;
 }
+
 @font-face {
   font-family: "lato";
   src: url(/fonts/Lato-Bold.ttf);
   font-weight: bold;
 }
+
 @font-face {
   font-family: "lato";
   src: url(/fonts/Lato-Regular.ttf);
   font-weight: normal;
 }
+
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -47,6 +50,7 @@ a {
   .header {
     display: none;
   }
+
   .navbar {
     position: fixed;
     top: 0;
@@ -55,6 +59,7 @@ a {
     background-size: 100% 130px;
     width: 100%;
   }
+
   .navbar .overlay {
     position: fixed;
     top: 0;
@@ -62,10 +67,12 @@ a {
     height: 136px;
     background-color: rgba(248, 248, 248, 0.9);
   }
+
   .navbar .navbarBrand,
   .navbar .closeNavbar {
     display: none;
   }
+
   .navbar .navbarBox .openNavbar,
   .navbar .navbarBox .closeNavbar {
     position: fixed;
@@ -74,10 +81,12 @@ a {
     width: 30px;
     height: 20px;
   }
+
   .navbar .navbarListBox .menuList,
   .navbar .navbarListBox .campaign {
     display: none;
   }
+
   #navbar.mobileSizeNavBar {
     display: block;
     height: 100%;
@@ -85,29 +94,35 @@ a {
     background-color: rgb(248, 248, 248);
     align-items: center;
   }
+
   #navbar.mobileSizeNavBar .overlay,
   #navbar.mobileSizeNavBar .openNavbar {
     display: none;
   }
+
   #navbar.mobileSizeNavBar .closeNavbar {
     width: 20px;
     height: 20px;
   }
+
   #navbar.mobileSizeNavBar .navbarListBox {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   #navbar.mobileSizeNavBar .navbarListBox .campaign {
     display: block;
     position: static;
     margin-top: 20px;
   }
+
   #navbar.mobileSizeNavBar .navbarListBox .campaign a {
     color: #ec5242 !important;
     font-weight: bold;
     width: 100%;
   }
+
   #navbar.mobileSizeNavBar .navbarListBox .menuList {
     display: flex;
     flex-direction: column;
@@ -115,16 +130,20 @@ a {
     align-items: center;
     gap: 20px;
   }
+
   #navbar.mobileSizeNavBar .navbarListBox .menuList li a {
     font-weight: bold;
     color: #272a31;
   }
+
   #navbar.mobileSizeNavBar .openNavbar {
     display: none;
   }
+
   #navbar.mobileSizeNavBar .closeMobileMenu {
     display: block;
   }
+
   .select-ticket {
     background-color: rgba(248, 248, 248, 0.9);
     margin-top: 136px;
@@ -132,28 +151,34 @@ a {
     row-gap: 16px;
     padding-bottom: 100px;
   }
+
   .select-ticket .introductionText {
     color: #ec5242;
   }
+
   .select-ticket .introductionText span {
     font-weight: normal;
     font-size: 2rem;
   }
+
   .select-ticket .introductionText h1 {
     display: block;
     font-size: 40px;
     font-weight: bolder;
     margin-top: 10px;
   }
+
   .select-ticket .descriptionText {
     border: 5px solid white;
     padding: 30px 5%;
     text-align: justify;
   }
+
   .select-ticket .dateAndPlace h1 {
     font-size: 30px;
     font-weight: bolder;
   }
+
   .mainProgram {
     color: white;
     background-color: #272a31;
@@ -162,13 +187,16 @@ a {
     row-gap: 15px;
     padding-bottom: 50px;
   }
+
   .mainProgram .mainProgramItemsBox {
     gap: 15px;
     align-items: center;
   }
+
   .mainProgram .mainProgramItemsBox article {
     width: 95%;
   }
+
   .mainProgram .mainProgramItemsBox .mainProgramItem {
     background-color: #3c3f46;
     width: 100%;
@@ -176,28 +204,34 @@ a {
     column-gap: 3%;
     font-size: 0.8rem;
   }
+
   .mainProgram .mainProgramItemsBox .mainProgramItem .mainProgramImage {
     width: 12%;
     margin-left: 3%;
   }
+
   .mainProgram .mainProgramItemsBox .mainProgramItem h3 {
     color: #f35444;
     width: 19%;
     font-weight: bold;
   }
+
   .mainProgram .mainProgramItemsBox .mainProgramItem p {
     width: 58%;
     text-align: start;
     margin: 5px 2%;
   }
+
   .mainProgram h2 {
     margin-bottom: -5px;
   }
+
   .mainProgram .underlineMainTitle {
     border: 1px solid #ec5242;
     width: 50px;
     margin-bottom: 20px;
   }
+
   .mainProgram .joinButton {
     height: 75px;
     width: 330px;
@@ -206,28 +240,34 @@ a {
     text-align: center;
     align-items: center;
   }
+
   .mainProgram .joinButton .joinLink {
     color: #1f1f1f;
     font-weight: bold;
     font-size: 1rem;
   }
+
   .mainProgram .joinButton:hover {
     background-color: #3c3f46;
   }
+
   .mainProgram .joinButton:hover .joinLink {
     color: white;
   }
+
   .featuredSpeakers {
     align-items: center;
     padding-top: 30px;
     gap: 10px;
     padding-bottom: 50px;
   }
+
   .featuredSpeakers .underlineTitle {
     border: 1px solid #ec5242;
     width: 50px;
     margin-bottom: 20px;
   }
+
   .featuredSpeakers .featuredSpeakersBox {
     width: 100%;
     display: grid;
@@ -235,36 +275,44 @@ a {
     row-gap: 20px;
     font-size: 0.9rem;
   }
+
   .featuredSpeakers .featuredSpeakersBox .speakerBox {
     display: flex;
     gap: 5%;
     margin: 0 2.5%;
   }
+
   .featuredSpeakers .featuredSpeakersBox .speakerBox .speakerImage {
     width: 160px;
     height: auto;
   }
+
   .featuredSpeakers .featuredSpeakersBox .speakerBox .speakerDetailsBox {
     margin-top: 10px;
   }
+
   .featuredSpeakers .featuredSpeakersBox .speakerBox .speakerDetailsBox h3 {
     font-weight: bold;
   }
+
   .featuredSpeakers .featuredSpeakersBox .speakerBox .speakerDetailsBox h4 {
     margin-top: 10px;
     color: #cd4739;
     font-style: italic;
     font-size: 1em;
   }
+
   .featuredSpeakers .featuredSpeakersBox .speakerBox .speakerDetailsBox .underline {
     border-bottom: 1px solid gray;
     width: 20px;
   }
+
   .featuredSpeakers .featuredSpeakersBox .speakerBox .speakerDetailsBox p {
     margin-top: 10px;
     font-size: 1em;
     text-align: justify;
   }
+
   .featuredSpeakers .moreSpeakersButton {
     border: 1px solid gray;
     width: 90%;
@@ -273,26 +321,31 @@ a {
     height: 50px;
     gap: 5px;
   }
+
   .featuredSpeakers .moreSpeakersButton .moreFeatureSpeakers {
     font-size: 0.8rem;
     color: #272a31;
     font-weight: normal;
   }
+
   .partner {
     align-items: center;
     background-color: #272a31;
     height: 230px;
   }
+
   .partner h2 {
     color: #8e8e8e;
     font-size: 1.5rem;
     margin-top: 30px;
     font-weight: bold;
   }
+
   .partner .partnerUnderline {
     width: 5%;
     border: 1px solid #ec5242;
   }
+
   .partner ul {
     width: 80%;
     justify-content: center;
@@ -300,25 +353,30 @@ a {
     margin-top: 30px;
     gap: 3%;
   }
+
   .partner ul li a img {
     height: 30px;
     width: auto;
   }
-  .footer {
+
+  #footer {
     justify-items: flex-end;
     padding: 30px 10%;
     gap: 20px;
   }
-  .footer h2 {
+
+  #footer .footer-heading {
     font-size: 1.2rem;
     font-weight: bold;
     width: 50%;
   }
-  .footer .footerParagraph {
+
+  #footer .footerParagraph {
     font-size: 0.8rem;
     width: 50%;
   }
 }
+
 @media (min-width: 1024px) {
   .header {
     display: block;
@@ -328,6 +386,7 @@ a {
     background-color: #272a31;
     padding: 5px 0;
   }
+
   .header ul {
     margin: 0 5.5% 0 64.5%;
     gap: 20px;
@@ -335,49 +394,59 @@ a {
     padding-left: 0;
     align-items: center;
   }
+
   .header ul li a {
     color: white;
     font-size: 0.8rem;
   }
+
   .header ul li a img {
     height: 20px;
     width: auto;
     margin-top: 5px;
   }
+
   .navbar {
     height: 50px !important;
     margin-top: 40px;
     padding: 5px 0 5px 0;
     background: white !important;
-    box-shadow: 5px 5px 8px #888888;
+    box-shadow: 5px 5px 8px #888;
   }
+
   .navbar .overlay {
     display: none;
   }
+
   .navbar .navbarBox {
     display: flex;
   }
+
   .navbar .navbarBox .navbarBrand {
     margin-left: 13%;
     display: block;
     width: 100px;
     height: 50px;
   }
+
   .navbar .navbarBox .navbarBrand img {
     position: static;
     height: 40px;
     width: auto;
     margin-top: -2px;
   }
+
   .navbar .navbarBox .closeMobileMenu,
   .navbar .navbarBox .openNavbar {
     display: none;
   }
+
   .navbar .navbarBox .navbarListBox {
     justify-content: end;
     width: 60%;
     margin-left: 1%;
   }
+
   .navbar .navbarBox .navbarListBox .menuList {
     display: flex;
     flex-direction: row;
@@ -387,25 +456,30 @@ a {
     margin-top: 5px;
     margin-left: 35%;
   }
+
   .navbar .navbarBox .navbarListBox .menuList .active {
     color: #cd4739 !important;
     font-weight: bold;
     border-bottom: 2px solid #ec5242;
   }
+
   .navbar .navbarBox .navbarListBox .menuList li a {
     font-weight: bold;
     font-size: 1rem;
     color: #272a31;
   }
+
   .navbar .navbarBox .navbarListBox .menuList li a:active {
     color: #cd4739 !important;
     font-weight: bold;
     border-bottom: 2px solid #ec5242;
   }
+
   .navbar .navbarBox .navbarListBox .menuList li a:hover {
     color: #ec5242 !important;
     border-bottom: 2px solid #ec5242;
   }
+
   .navbar .navbarBox .navbarListBox .campaign {
     display: block;
     border: 3px solid #cd4739;
@@ -414,32 +488,43 @@ a {
     margin: 0 0 0 5%;
     padding: 4px 7px;
   }
+
   .navbar .navbarBox .navbarListBox .campaign .campaignLink {
     color: #cd4739;
     font-weight: bold;
     font-size: 1rem;
   }
-  .select-ticket, #select-lunch {
+
+  #select-ticket,
+  #select-lunch {
     padding: 200px 0 75px 0;
     margin-top: 0;
     align-items: center;
     gap: 30px;
   }
-  .select-ticket .title, #select-lunch .title {
+
+  #select-ticket .title,
+  #select-lunch .title {
     display: flex;
     align-items: center;
   }
-  .select-ticket .title h2, #select-lunch .title h2 {
+
+  #select-ticket .title h2,
+  #select-lunch .title h2 {
     display: block;
     font-size: 1.5rem;
     font-weight: bolder;
   }
-  .select-ticket .title hr, #select-lunch .title hr {
+
+  #select-ticket .title hr,
+  #select-lunch .title hr {
     border: 1px solid #ec5242;
     width: 50px;
     margin-top: 5px;
   }
-  .select-ticket .step, #select-lunch .step {
+
+  #select-ticket .step,
+  #select-lunch .step {
     display: flex;
     gap: 20px;
     align-items: center;
@@ -448,18 +533,26 @@ a {
     border: 1px solid gainsboro;
     border-radius: 20px;
   }
-  .select-ticket .step span:nth-child(1), #select-lunch .step span:nth-child(1) {
+
+  #select-ticket .step span:nth-child(1),
+  #select-lunch .step span:nth-child(1) {
     color: #ec5242;
   }
-  .select-ticket .step span:nth-child(1) i, #select-lunch .step span:nth-child(1) i {
+
+  #select-ticket .step span:nth-child(1) i,
+  #select-lunch .step span:nth-child(1) i {
     font-size: 0.7rem;
   }
-  .select-ticket .tickets, #select-lunch .tickets {
+
+  #select-ticket .tickets,
+  #select-lunch .tickets {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     border: 5px solid #ec5242;
   }
-  .select-ticket .tickets div, #select-lunch .tickets div {
+
+  #select-ticket .tickets div,
+  #select-lunch .tickets div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -469,20 +562,30 @@ a {
     border-bottom: 1px solid gainsboro;
     border-right: 1px solid gainsboro;
   }
-  .select-ticket .tickets div input, #select-lunch .tickets div input {
+
+  #select-ticket .tickets div input,
+  #select-lunch .tickets div input {
     margin-bottom: 10px;
     accent-color: #ec5242;
   }
-  .select-ticket .tickets div:nth-child(n+5), #select-lunch .tickets div:nth-child(n+5) {
+
+  #select-ticket .tickets div:nth-child(n+5),
+  #select-lunch .tickets div:nth-child(n+5) {
     background-color: white;
   }
-  .select-ticket .tickets .category, #select-lunch .tickets .category {
+
+  #select-ticket .tickets .category,
+  #select-lunch .tickets .category {
     height: 50px;
   }
-  .select-ticket .tickets .item-3, #select-lunch .tickets .item-3 {
+
+  #select-ticket .tickets .item-3,
+  #select-lunch .tickets .item-3 {
     grid-column: 3/span 2;
   }
-  .select-ticket .tickets .price, #select-lunch .tickets .price {
+
+  #select-ticket .tickets .price,
+  #select-lunch .tickets .price {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -491,33 +594,44 @@ a {
     height: 100%;
     width: 100%;
   }
-  .select-ticket .next-section, #select-lunch .next-section {
+
+  #select-ticket .next-section,
+  #select-lunch .next-section {
     position: absolute;
     bottom: 118px;
   }
-  .select-ticket .next-section a, #select-lunch .next-section a {
+
+  #select-ticket .next-section a,
+  #select-lunch .next-section a {
     position: relative;
   }
-  .select-ticket .next-section a span:nth-child(1), #select-lunch .next-section a span:nth-child(1) {
+
+  #select-ticket .next-section a span:nth-child(1),
+  #select-lunch .next-section a span:nth-child(1) {
     color: #ec5242;
     font-size: 3rem;
   }
-  .select-ticket .next-section a span:nth-child(2), #select-lunch .next-section a span:nth-child(2) {
+
+  #select-ticket .next-section a span:nth-child(2),
+  #select-lunch .next-section a span:nth-child(2) {
     color: white;
     font-size: 1rem;
     margin-left: -30px;
     position: absolute;
     margin-top: 20px;
   }
+
   #select-lunch {
     padding-top: 100px;
     align-items: center;
     gap: 30px;
   }
-  #select-lunch ul {
+
+  #select-lunch .lunch-selection {
     min-width: 885px;
   }
-  #select-lunch ul li {
+
+  #select-lunch .lunch-selection li {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -525,7 +639,8 @@ a {
     min-height: 100px;
     box-shadow: 2px 2px 3px gainsboro;
   }
-  #select-lunch ul li div:nth-child(1) {
+
+  #select-lunch .lunch-selection li div:nth-child(1) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -533,7 +648,8 @@ a {
     height: 40px;
     background-color: rgba(248, 248, 248, 0.9);
   }
-  #select-lunch ul li div:nth-child(2) {
+
+  #select-lunch .lunch-selection li div:nth-child(2) {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -543,9 +659,11 @@ a {
     font-size: 0.9rem;
     font-weight: bold;
   }
-  #select-lunch ul li div:nth-child(2) input {
+
+  #select-lunch .lunch-selection li div:nth-child(2) input {
     accent-color: #ec5242;
   }
+
   #select-lunch .save-button-ticket {
     background-color: #ec5242;
     border: none;
@@ -557,12 +675,12 @@ a {
     border-radius: 20px;
     cursor: pointer;
   }
+
   #select-lunch .save-button-ticket:hover {
     background-color: #3c3f46;
   }
-  .footer h2 {
+
+  #footer .footer-heading {
     font-size: 2rem;
   }
 }
-
-/*# sourceMappingURL=join.css.map */

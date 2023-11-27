@@ -267,7 +267,7 @@ a {
 
     .joinButton:hover {
       background-color: #3c3f46;
-      
+
       .joinLink {
         color: #ffff;
       }
@@ -378,12 +378,12 @@ a {
     }
   }
 
-  .footer {
+  #footer {
     justify-items: flex-end;
     padding: 30px 10%;
     gap: 20px;
 
-    h2 {
+    .footer-heading {
       font-size: 1.2rem;
       font-weight: bold;
       width: 50%;
@@ -430,7 +430,7 @@ a {
     margin-top: 40px;
     padding: 5px 0 5px 0;
     background: #ffff !important;
-    box-shadow: 5px 5px 8px #888888;
+    box-shadow: 5px 5px 8px #888;
 
     .overlay {
       display: none;
@@ -514,7 +514,8 @@ a {
     }
   }
 
-  .select-ticket, #select-lunch {
+  #select-ticket,
+  #select-lunch {
     padding: 200px 0 75px 0;
     margin-top: 0;
     align-items: center;
@@ -545,7 +546,7 @@ a {
       height: 40px;
       border: 1px solid gainsboro;
       border-radius: 20px;
-      
+
       span:nth-child(1) {
         color: $secondaryColor;
 
@@ -574,7 +575,6 @@ a {
           margin-bottom: 10px;
           accent-color: $secondaryColor;
         }
-
       }
 
       div:nth-child(n+5) {
@@ -598,16 +598,6 @@ a {
         height: 100%;
         width: 100%;
       }
-
-      // .selected-price {
-      //   background-color: $secondaryColor;
-      //   color: #ffff;
-      // }
-
-      // .price:hover {
-      //   background-color: $secondaryColor;
-      //   color: #ffff;
-      // }
     }
 
     .next-section {
@@ -621,6 +611,7 @@ a {
           color: $secondaryColor;
           font-size: 3rem;
         }
+
         span:nth-child(2) {
           color: #ffff;
           font-size: 1rem;
@@ -637,7 +628,7 @@ a {
     align-items: center;
     gap: 30px;
 
-    ul {
+    .lunch-selection {
       min-width: 885px;
 
       li {
@@ -691,8 +682,8 @@ a {
     }
   }
 
-  .footer {
-    h2 {
+  #footer {
+    .footer-heading {
       font-size: 2rem;
     }
   }
